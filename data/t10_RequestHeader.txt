@@ -1,0 +1,11 @@
+GET /xml/ihtiyac-kredisi.xml?v1472109870823 HTTP/1.1
+X-Requested-With: XMLHttpRequest
+Accept: application/xml, text/xml, */*; q=0.01
+Referer: http://wwwtest.finansbank.com.tr/
+Accept-Language: tr-TR
+Accept-Encoding: gzip, deflate
+User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; rv:11.0) like Gecko
+Host: wwwtest.finansbank.com.tr
+Connection: Keep-Alive
+Cookie: FinansbankMecra=8/25/2016|(direct)|||; FirstClick=8/25/2016|(direct)|||; LastClick=8/25/2016|(direct)|||; AssistedKanalVeKaynaklar=
+

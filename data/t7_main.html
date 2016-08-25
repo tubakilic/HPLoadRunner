@@ -1,0 +1,751 @@
+
+/* $$$
+$$$ BROWSER DETECT
+$$$
+*/
+function Browser(){
+var ua = navigator.userAgent.toLowerCase();
+var b=navigator.appName;
+if (b=="Netscape") this.b="ns";
+else if ((b=="Opera") || (navigator.userAgent.indexOf("Opera")>0)) this.b = "opera";
+else if (b=="Microsoft Internet Explorer") this.b="ie";
+if (!b) alert('Unidentified browser./nThis browser is not supported,');
+this.version=navigator.appVersion;
+this.v=parseInt(this.version);
+this.Gecko = (ua.indexOf('gecko') != -1 && ua.indexOf('safari') == -1);
+this.Safari = (ua.indexOf('safari') != - 1);
+this.ns=(this.b=="ns" && this.v>=4);
+this.IE = (ua.indexOf('msie') != -1 && !this.Opera && (ua.indexOf('webtv') == -1) );
+this.Firefox = ( (ua.indexOf('firebird/') != -1) || (ua.indexOf('firefox/') != -1) );
+this.IECompatible = ( (ua.indexOf('msie') != -1) && !this.IE);
+this.NSCompatible = ( (ua.indexOf('mozilla') != -1) && !this.NS && !this.Mozilla);
+this.geckoVersion = ( (this.Gecko) ? ua.substring( (ua.lastIndexOf('gecko/') + 6), (ua.lastIndexOf('gecko/') + 14) ) : -1 );
+this.equivalentMozilla = ( (this.Gecko) ? parseFloat( ua.substring( ua.indexOf('rv:') + 3 ) ) : -1 );
+this.versionMinor = parseFloat(navigator.appVersion);
+if (this.Gecko && !this.Mozilla) this.versionMinor = parseFloat( ua.substring( ua.indexOf('/', ua.indexOf('gecko/') + 6) + 1 ) );
+else if (this.Mozilla) this.versionMinor = parseFloat( ua.substring( ua.indexOf('rv:') + 3 ) );
+else if (this.IE && this.versionMinor >= 4) this.versionMinor = parseFloat( ua.substring( ua.indexOf('msie ') + 5 ) );
+else if (this.Safari) this.versionMinor = parseFloat( ua.substring( ua.lastIndexOf('safari/') + 7 ) );
+this.versionMajor = parseInt(this.versionMinor);
+this.DOM1 = (document.getElementById);
+this.DOM2Event = (document.addEventListener && document.removeEventListener);
+this.mode = document.compatMode ? document.compatMode : 'BackCompat';
+this.Win = (ua.indexOf('win') != -1);
+this.Mac = (ua.indexOf('mac') != -1);
+this.NS6up = (this.NS && this.versionMajor >= 6);
+this.NS7up = (this.NS && this.versionMajor >= 7);
+this.IE4 = (this.IE && this.versionMajor == 4);
+this.IE5 = (this.IE && this.versionMajor == 5);
+this.IE55 = (this.IE && this.versionMinor == 5.5);
+this.IE5up = (this.IE && this.versionMajor >= 5);
+this.IE6x = (this.IE && this.versionMajor == 6);
+this.IE6up = (this.IE && this.versionMajor >= 6);
+}
+var is = new Browser();
+/* $$$
+$$$ POPUPS
+$$$
+*/
+var Popwin = null;
+function intBankCheck(){
+var checkIntBanking = setInterval(function(){
+if(Popwin!=null && Popwin.closed){
+clearInterval(checkIntBanking);
+document.location.reload();
+}
+},1200);
+}
+function PopItUp(src,w,h,s) {
+var fr = /\/fon-fiyat-getirileri\//i;
+var pst = "";
+// fon fiyat getirileri
+if (fr.test(src)) {
+    pst = ", left=20, top=130"
+}
+if(s) w=w+17;
+if(w){
+Popwin = window.open(src,"pop_up","toolbar=0,width=" + w + ", height=" + h + ", location=0, directories=0, status=1, scrollbars="+s+", menubar=0, resizable=0, copyhistory=0" + pst);
+Popwin.focus();
+}
+else {
+window.location = src
+}
+}
+function PopItUp_Fixed(src) {
+Popwin = window.open(src,"pop_up","toolbar=0, width=600, height=600, location=0, directories=0, status=1, scrollbars=1, menubar=0, resizable=0, copyhistory=0");
+Popwin.focus();
+}
+function PopItUpResize(src,w,h,s) {
+if(s) w=w+17;
+Popwin = window.open(src,"pop_up","toolbar=0,width=" + w + ", height=" + h + ", location=0, directories=0, status=1, scrollbars="+s+", menubar=0, resizable=1, copyhistory=0");
+Popwin.focus();
+}
+function PopSube(src,w,h,s,r,hi) {
+if(s) w=w+17;
+Popwin = window.open(src,"FWFINTBANK","width="+ w +",height="+ h +",top=0,left=0,toolbar=0,location=0,address=no, directories=0,status=1,menubar=0,scrollbars=yes,resizable=1,copyhistory=1");
+if (Popwin != null) {
+Popwin.focus();
+}
+}
+function externalSite(src){
+var externalSite = window.open(src);
+externalSite.focus();
+}
+function PopItUp2(src,w,h,s) {
+if(s) w=w+17;
+Popwin = window.open(src,"pop_up","toolbar=0,width=" + w + ", height=" + h + ", location=0, directories=0, status=1, scrollbars="+s+", menubar=0, resizable=1, copyhistory=0");
+Popwin.focus();
+}
+/* $$$
+$$$ WINDOW HEIGHT
+$$$
+*/
+function getWindowHeight(){
+var windowHeight = 0;
+if(typeof(window.innerHeight) == 'number'){
+windowHeight = window.innerHeight;
+}else{
+if(document.documentElement && document.documentElement.clientHeight){
+windowHeight = document.documentElement.clientHeight;
+}else{
+if(document.body && document.body.clientHeight){
+windowHeight = document.body.clientHeight;
+}
+}
+}
+return windowHeight;
+}
+/* $$$
+$$$ WINDOW WIDTH
+$$$
+*/
+function getWindowWidth(){
+var windowWidth = 0;
+if(typeof(window.innerWidth) == 'number'){
+windowWidth = window.innerWidth;
+}else{
+if(document.documentElement && document.documentElement.clientWidth){
+windowWidth = document.documentElement.clientWidth;
+}else{
+if(document.body && document.body.clientWidth){
+windowWidth = document.body.clientWidth;
+}
+}
+}
+return windowWidth;
+}
+/* $$$
+$$$ FOOTER
+$$$
+*/
+function setFooter(){
+if (document.getElementById){
+var windowHeight = getWindowHeight();
+if (windowHeight>0){
+var wrapperHeight = document.getElementById('wrapper').offsetHeight;
+var footerElement = document.getElementById('footer');
+var footerHeight = footerElement.offsetHeight;
+if (windowHeight - (wrapperHeight)>= 99) {
+footerElement.style.marginTop = (windowHeight - (wrapperHeight))-99 + 'px';
+//console.log((windowHeight - (wrapperHeight))-76 + 'px')
+}else{
+footerElement.style.marginTop = 0;
+}
+}
+}
+}
+/* $$$
+$$$ MAIL ENCODE
+$$$
+*/
+function mailTo(m,e,t) {
+if (!e) {
+e='finansbank.com.tr';
+}
+if (!t) {
+t=m+String.fromCharCode(64)+e;
+}
+document.write('<a href="mailto:'+m+String.fromCharCode(64)+e+'" class="contentlink">'+t+'</a>');
+}
+/* $$$
+$$$ INPUT CONTROLS
+$$$
+*/
+function onlyLetter(e) {
+var keyCode = (is.ns) ? e.which : e.keyCode;
+if (keyCode > 47 && keyCode<58){
+return false;}
+}
+function onlyNumber(e) {
+var keyCode = (is.ns) ? e.which : e.keyCode;
+if ((keyCode < 48 || keyCode > 57) && keyCode != 8 && keyCode !=0) {
+return false;
+}
+}
+function onlyEmail(e) {
+var InvalidChars=" !#/*{[()]},;^><\\?+:'`|þÞÐðÜüÇçÝýÖö";
+kCode=InvalidChars.charAt(5);
+var keyCode = (is.ns) ? e.which : event.keyCode;
+if (keyCode>127) {
+return false;
+}
+for (i=0;i<=InvalidChars.length-1;i++) {
+if (keyCode==InvalidChars.charCodeAt(i)) {
+return false;
+}
+}
+return true;
+}
+function stopt(){
+}
+function KontrolMaxlength(t,l) {
+if (document.getElementById(t).value.length >= l)
+{
+document.getElementById(t).value = document.getElementById(t).value.substr(0,l);
+return false;
+}
+}
+/* $$$
+$$$ INPUT AUTOFOCUS
+$$$
+*/
+function autofocus(field, limit, next, evt) {
+evt = (evt) ? evt : event;
+var charCode = (evt.charCode) ? evt.charCode : ((evt.keyCode) ? evt.keyCode :
+((evt.which) ? evt.which : 0));
+if (charCode > 31 && field.value.length == limit) {
+field.form.elements[next].focus();
+}
+}
+function init(){
+/*if (!document.getElementsByTagName) return;
+imgArray = document.getElementsByTagName("img");
+for (i=0;i<imgArray.length;i++){
+if(imgArray[i].alt!=-1) imgArray[i].title=imgArray[i].alt;
+}
+aArray = document.getElementsByTagName("a");
+for (i=0;i<aArray.length;i++){
+if(aArray[i] && aArray[i].href && !aArray[i].title && aArray[i].childNodes[0]) aArray[i].title = aArray[i].childNodes[0].nodeValue;
+}*/
+}
+function delCookie(name) {
+createCookie(name,"",-1);
+}
+function intSube(ref) {
+_gaq.push(['_trackEvent', 'Navigation', 'Main', 'Internet Subesi']);
+if(ref){
+PopSube('/redirect/internet-subesi.aspx'+ref+' ',1000,599)
+}
+else {
+var fbURL = window.location.pathname;
+PopSube('/redirect/internet-subesi.aspx?FB_URL='+fbURL,1000,599)
+}
+}
+function intSubeFlash(ref){
+intSube(ref);
+intBankCheck();
+}
+function hizliLogininPopUp(ref) {
+
+if(ref){
+PopSube('/redirect/hb-aninda-sifre.aspx',755,520)
+}
+else {
+var fbURL = window.location.pathname;
+PopSube('/redirect/hb-aninda-sifre.aspx?FB_URL='+fbURL,755,520)
+}
+}
+function intSubeEN(ref){
+if(ref){
+PopSube('/redirect/internet-banking.aspx' + ref,1000,584)
+}
+else {
+var fbURL = window.location.pathname;
+PopSube('/redirect/internet-banking.aspx?FB_URL='+fbURL,1000,584)
+}
+}
+function hizliLogin(ref) {
+    _gaq.push(['_trackEvent', 'Navigation', 'Main', 'Aninda Sifre']);
+if(ref){
+PopItUp('/redirect/hb-aninda-sifre.aspx' + ref,755,520)
+}
+else {
+var fbURL = window.location.pathname;
+PopItUp('/redirect/hb-aninda-sifre.aspx?FB_URL='+fbURL,755,520)
+}
+}
+function anindaKredi(ref){
+
+var uzanti = getParameterByName("ref"); 
+
+
+ 
+         if (uzanti != "") {
+             window.location = root+"krediler/ihtiyac/ihtiyac-kredi-basvurusu.aspx?FROM=2&ref="+uzanti;
+        }
+        else {
+            window.location = root+"krediler/ihtiyac/ihtiyac-kredi-basvurusu.aspx?FROM=2&ref=Finansbank";
+        }
+//if(ref){
+//window.location = root+'krediler/ihtiyac/ihtiyac-kredi-basvurusu-redirect.aspx?FROM=2&ref='+ uzanti
+//}
+//else {
+//var fbURL = window.location.pathname;
+//window.location = root+'krediler/ihtiyac/ihtiyac-kredi-basvurusu-redirect.aspx?FROM=2&ref='+ uzanti
+//}
+}
+function anindaKredi2(ref){
+if(ref){
+window.location = root+'krediler/ihtiyac/ihtiyac-kredi-basvurusu-redirect.aspx?FROM=2&ref='+ uzanti
+}
+else {
+var fbURL = window.location.pathname;
+window.location = root+'krediler/ihtiyac/ihtiyac-kredi-basvurusu-redirect.aspx?FROM=2&ref='+ uzanti
+}
+}
+function anindaKredi3(ref){
+if(ref){
+PopItUp('/popup/aninda-kredi.aspx'+ ref +' ',640,500,1)
+}
+else {
+var fbURL = window.location.pathname;
+PopItUp('/popup/aninda-kredi.aspx?FB_URL='+fbURL,640,500,1)
+}
+}
+function anindaKart(ref){
+
+   // window.open = root + 'redirect/hb-cardfinans.aspx'
+    window.open(root + 'redirect/hb-cardfinans.aspx', '_blank');
+}
+function ortakMarkaliKartlar(ref){
+if(ref){
+PopItUp('http://www.cardfinans.com.tr/cardfinans-ile-tanisin/popup/hizli-kart-basvurusu-ortak-markali-kartlar.aspx'+ref,750,742,1)
+}
+else {
+var fbURL = window.location.pathname;
+PopItUp('http://www.cardfinans.com.tr/cardfinans-ile-tanisin/popup/hizli-kart-basvurusu-ortak-markali-kartlar.aspx?FB_URL='+fbURL,750,742,1)
+}
+}
+function eEkstre(ref){
+if(ref){
+PopItUp('/redirect/hb-webden-eekstre.aspx',609,690,1)
+}
+else {
+var fbURL = window.location.pathname;
+PopItUp('/redirect/hb-webden-eekstre.aspx?FB_URL='+fbURL,609,690,1)
+}
+}
+function anindaSifre(ref){
+if(ref){
+PopItUp('/redirect/hb-aninda-sifre.aspx' + ref,755,520,1)
+}
+else {
+var fbURL = window.location.pathname;
+PopItUp('/redirect/hb-aninda-sifre.aspx?FB_URL='+fbURL,755,520,1)
+}
+}
+function anindaSifre2(ref){
+if(ref){
+PopItUp('/redirect/as-aninda-sifre.aspx',755,520,1)
+}
+else {
+var fbURL = window.location.pathname;
+PopItUp('/redirect/as-aninda-sifre.aspx?FB_URL='+fbURL,755,520,1)
+}
+}
+var isIE6 = (new RegExp('msie 6', "i")).test(navigator.userAgent);
+function urunAgaci() {
+    _gaq.push(['_trackEvent', 'Navigation', 'Header', 'Urun Bulucu']);
+if( $("#fadeMask").length != 0 ) {
+return false;
+}
+var mask = $('<div id="fadeMask" style="position:fixed;left:0;top:0;">&nbsp;</div>');
+var ua = $('<div id="urunagaci" style="background:transparent; position:fixed; left:50%;margin-left:-458px; top:50%;height:612px;margin-top:-306px; width:961px;z-index:1000;"><a href="#" class="closebtn" style="float:right; width:39px;"><img style="float:right;" src="'+root+'images/ua-close.png" /></a><div id="urunagacifl" style="background:#fff;height:600px;width:910px; padding:6px;float:left;"><img src="'+root+'images/flplayer.jpg" style="display:none;" /></div></div>');
+$(window).resize(function(){
+mask.css({ "height": $(window).height(), "width": '100%' });
+}).resize();
+if (isIE6) {
+mask.css('position', 'absolute');
+ua.css('position', 'absolute');
+$(window).bind('scroll' ,function(e) {
+mask.css('top', document.documentElement.scrollTop);
+ua.css('marginTop', document.documentElement.scrollTop - 306);
+});
+}
+$("body").append(mask).append(ua);
+mask.fadeIn(100);
+mask.fadeTo("fast", "0.7", function(){
+ua.show();
+});
+if(flashversiyon=$().flash.hasFlash.playerVersion().split(',')[0] > 8) {
+    $('#urunagacifl').flash({
+        src: root + 'swf/ProductTreeWeb.swf',
+        width: "910",
+        height: "600",
+        id: "ptree",
+        wmode: "opaque",
+        flashvars: {
+            "xmlPath": root + "swf/xml/ptree.xml",
+            "banauygunyatirimaraciXMLPath": root + "swf/xml/banaGoreYatirimAraci.xml",
+            "mortgageYonlendirmeXMLPath": root + "swf/xml/mortgageUrunYonlendirme.xml",
+            "swfPath": root + "swf/",
+            "w": root
+        }
+    },
+    {
+        version: "9"
+
+    });
+
+}
+else {
+$('#urunagacifl img').show();
+}
+mask.click(function(){
+closeUrunAgaci();
+});
+$('.closebtn').click(function(){
+closeUrunAgaci();
+return false;
+});
+}
+function closeUrunAgaci() {
+$("#urunagaci,#fadeMask").remove();
+}
+function krediHesapMakinesi(state, interest) {
+if(!state) {
+state = "ihtiyac";
+}
+if(!interest) {
+interest = 0;
+}
+var states = {
+"ihtiyac":1,
+"tasit":2,
+"konut":3
+};
+if( $("#fadeMask").length != 0 ) {
+return false;
+}
+var mask = $('<div id=\"fadeMask\" style="position:fixed;left:0;top:0;">&nbsp;</div>');
+var hesapMakinesi = $('<div style="width:577px;top:100px; left:200px;" id=\"hesapMakinesi\">&nbsp;</div>');
+hesapMakinesi.flash({
+src: root + 'swf/hesap-makinesi/calculator.swf',
+width: "577",
+height: "660",
+id: "flashHeader",
+wmode: "transparent",
+flashvars: {
+"xmlPath": root + "swf/xml/hesap-makinesi.xml",
+"initialState": states[state],
+"initialFaiz": interest
+}
+},
+{
+version: "9"
+});
+$(window).resize(function(){
+mask.css({ "height": $(window).height(), "width": '100%' });
+}).resize();
+if (isIE6) {
+mask.css('position', 'absolute');
+$(window).bind('scroll' ,function(e) {
+mask.css('top', document.documentElement.scrollTop)
+});
+}
+$("body").append(mask).append(hesapMakinesi);
+mask.fadeIn(100);
+mask.fadeTo("fast", "0.7", function(){
+hesapMakinesi.show();
+});
+mask.click(function(){
+mask.remove();
+hesapMakinesi.remove();
+});
+}
+function khmKapat() {
+$("#hesapMakinesi,#fadeMask").remove();
+}
+function KrediHesapSonuc(faiz, taksit, kredi, vade, krediTipi) {
+var inputs = [
+"<html>",
+"<head></head>",
+"<body>",
+//"<form id=\"formid\" method=\"POST\" action=\"" + root + "kredi-hesap-makinesi/sonuc.aspx\">",
+"<form id=\"formid\" method=\"POST\" action=\"" + root + "hesap-makinesi/kredi-hesap-makinesi-odeme.aspx\">",
+"<input type=\"hidden\" name=\"kmh_popup_faiz\" value=\"" + faiz + "\" />",
+"<input type=\"hidden\" name=\"kmh_popup_taksit\" value=\"" + taksit + "\" />",
+"<input type=\"hidden\" name=\"kmh_popup_kredi\" value=\"" + kredi + "\" />",
+"<input type=\"hidden\" name=\"kmh_popup_vade\" value=\"" + vade + "\" />",
+"<input type=\"hidden\" name=\"kmh_popup_kredi_tipi\" value=\"" + krediTipi + "\" />",
+"</form>",
+"<script type=\"text/javascript\">document.getElementById(\"formid\").submit();</script>",
+"</body>",
+"</html>"
+];
+//krediWin = window.open(root + "kredi-hesap-makinesi/sonuc.aspx","krediHesap","toolbar=0,width=710, height=670, location=0, directories=0, status=1, scrollbars=1, menubar=0, resizable=0, copyhistory=0");
+krediWin = window.open(root + "hesap-makinesi/sonuc.aspx","krediHesap","toolbar=0,width=710, height=670, location=0, directories=0, status=1, scrollbars=1, menubar=0, resizable=0, copyhistory=0");
+krediWin.focus();
+krediWin.document.write(inputs.join(""));
+}
+function getPageParam() {
+var r1 = /^http:\/\/[^/]+\/([^\?\.]+).*$/i;
+var r2 = /(\/|\.|-|\x20)/gi;
+var param = r1.exec(document.location)[1];
+return param.replace(r2, "_");
+}
+function linkToFaqItem(id) {
+var y = $("#"+id).click();
+setTimeout(function(){
+var pos = y.offset();
+window.scrollTo(pos.left, pos.top);
+},2000);
+return false;
+}
+/* $$$
+$$$ ONLOAD - ONRESIZE
+$$$
+*/
+if (window.navigator.userAgent == "kiosk") {
+kioskMsg = function () {
+alert("Týkladýðýnýz alan Coffee Table'da açýlamamaktadýr.");
+}
+window["PopItUp"] = kioskMsg;
+window["externalSite"] = kioskMsg;
+window["PopItUp_Fixed"] = kioskMsg;
+window["PopItUpResize"] = kioskMsg;
+window["PopSube"] = kioskMsg;
+window["intBankCheck"] = kioskMsg;
+document.documentElement.className += " kiosk";
+}
+function kartSube(ref) {
+    _gaq.push(['_trackEvent', 'Navigation', 'Main', 'Kart Islemleri']);
+if (ref) {
+if ($.browser.mozilla) {
+    javascript: PopSube('/redirect/kredi-karti-subesi.aspx' + ref + ' ', 970, 560, 1);
+}
+else if ($.browser.safari) {
+    javascript: PopSube('/redirect/kredi-karti-subesi.aspx' + ref + ' ', 970, 560, 1);
+}
+else {
+    javascript: PopSube('/redirect/kredi-karti-subesi.aspx' + ref + ' ', 970, 560, 1);
+}
+}
+else {
+if ($.browser.mozilla) {
+    javascript: PopSube('/redirect/kredi-karti-subesi.aspx', 970, 560, 1);
+}
+else if ($.browser.safari) {
+    javascript: PopSube('/redirect/kredi-karti-subesi.aspx', 970, 560, 1);
+}
+else {
+    javascript: PopSube('/redirect/kredi-karti-subesi.aspx', 970, 560, 1);
+}
+}
+}
+function openProduct(src) {
+if(window.location!=null){
+window.location = src;
+}
+}
+function yeniCepSube() {
+PopItUp('https://destekmasasi.finansbank.com.tr/MBSDefault.aspx',750,505)
+}
+function getParameterByName(name) {
+    name = name.replace(/[\[]/, "\\\[").replace(/[\]]/, "\\\]");
+    var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+        results = regex.exec(location.search);
+    return results == null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+}
+$(document).ready(function () {
+
+    if (location.hash != "") { location.hash = location.hash.replace(/[^\w\d-_|]/g, ""); }
+
+
+    $("a[href^='http']").each(function () {
+        $(this).click(function () {
+            _gaq.push(['_trackEvent', 'Outbound', 'Link', $(this).attr('href')]);
+            //alert('external')
+        })
+    })
+    $(".btnSubmit").click(function () {
+        if ($(".searchBox input").val().length > 2) {
+            call_back();
+        }
+        else {
+            $(".topNavigation .searchForm .searchError").show();
+            return false;       
+        }
+    });
+    $(".searchBox input").keyup(function () {
+        if ($(this).val().length > 2) {
+            $(".topNavigation .searchForm .searchError").hide();
+        }
+    });
+
+});
+$(document).ready(function () {
+    /*Home Page Rotator*/
+    var pageSize = $('.banner-rotator .item').length;
+
+
+
+    $(".banner-rotator .item:first").show();
+
+    $(".banner-rotator .item .left h3, .banner-rotator .item .left h2, .banner-rotator .item .left .rotator-button, .banner-rotator .item .left .maliyet-tablosu-btn").css("opacity", 0);
+    $(".banner-rotator .item:first .left h3").animate({
+        opacity: 1,
+        marginLeft: 0
+    }, 350)
+    $(".banner-rotator .item:first .left h2").animate({
+        opacity: 1,
+        marginLeft: 0
+    }, 450)
+
+    $(".banner-rotator .item .left .maliyet-tablosu-btn").animate({
+        opacity: 1,
+        marginLeft: 0
+    }, 450)
+
+    setTimeout(function () {
+        $(".banner-rotator .item .left .rotator-button").animate({
+            opacity: 1,
+            marginLeft: 0
+        }, 350)
+    }, 100)
+
+    _bannerSize = $(".banner-rotator").find(".item").length;
+    $('#bnr-next').bind('click', function () {
+        arrowNext();
+    });
+
+    $('#bnr-prev').bind('click', function () {
+        arrowPrev();
+    });
+    _slideInterval = setInterval(arrowNext, 8000);
+    if (_bannerSize == "1") {
+        $('#bnr-next, #bnr-prev').hide();
+        clearInterval(_slideInterval);
+    }
+    $(".banner-rotator .item .rotator-button a").click(function () {
+        GoogleTrack("Homepage Banner", "Click", $(this).parents(".item").find("h3").text(), 0, "true");
+    });
+    $(".bannerList li:first").addClass("active");
+    $(".bannerList li a").click(function () {
+        var index = $(this).parent("li").index();
+        _current = index;
+        $(".bannerList li").removeClass("active");
+        $(".bannerList li").eq(index).addClass("active");
+        _bannerRotator(index);
+        clearInterval(_slideInterval);
+        _slideInterval = setInterval(arrowNext, 8000);
+    });
+});
+function GoogleTrack(category, action, opt_label, value, non_interaction) {
+    _gaq.push(['_trackEvent', category, action, opt_label,value, non_interaction]);
+}
+var _slideInterval;
+var _current = 0;
+var _bannerSize;
+function arrowNext() {
+    clearInterval(_slideInterval);
+    _current++
+    if (_current >= _bannerSize) {
+        
+        _current = 0
+    }
+    _bannerRotator(_current);
+    if ($("#youtubeVideo:visible").length == 1) {
+        var video = $("#youtubeVideo:visible").attr("data-url");
+        $("#youtubeVideo:visible").attr("src", video);
+        clearInterval(_slideInterval);
+    } else {
+        $("#youtubeVideo").attr("src", "");
+        _slideInterval = setInterval(arrowNext, 8000);
+    }
+    
+}
+function arrowPrev() {
+    clearInterval(_slideInterval);
+    _current--
+    if (_current == -1) {
+        _current = _bannerSize - 1
+    }
+    _bannerRotator(_current);
+    if ($("#youtubeVideo:visible").length == 1) {
+        var video = $("#youtubeVideo:visible").attr("data-url");
+        $("#youtubeVideo:visible").attr("src", video);
+        clearInterval(_slideInterval);
+    } else {
+        $("#youtubeVideo").attr("src", "");
+        _slideInterval = setInterval(arrowNext, 8000);
+    }
+}
+
+function _bannerRotator(_index) {
+    
+    $(".banner-rotator .item").hide();
+    $(".banner-rotator .item").eq(_index).show();
+    $(".banner-rotator .item .banner-bg").hide();
+    $(".bannerList li").removeClass("active");
+    $(".bannerList li").eq(_index).addClass("active");
+    //if ($(".banner-rotator .item.loaded:visible").length == 0) {
+    //    GoogleTrack("Homepage Banner", "Show", $(".banner-rotator .item").eq(_index).find("h3").text(), 0, "true");
+    //}
+
+    $(".banner-rotator .item").eq(_index).addClass("loaded").find(".banner-bg").fadeIn("slow");
+
+    $(".banner-rotator .item .left h3, .banner-rotator .item .left h2, .banner-rotator .item .left .rotator-button, .banner-rotator .item .left .maliyet-tablosu-btn").css("opacity", 0).css("marginLeft", 80);
+   
+    $(".banner-rotator .item .left h3").eq(_index).animate({
+        opacity: 1,
+        marginLeft: 0
+    }, 350)
+    $(".banner-rotator .item .left h2").eq(_index).animate({
+        opacity: 1,
+        marginLeft: 0
+    }, 450)
+    $(".banner-rotator .item .left .maliyet-tablosu-btn").animate({
+        opacity: 1,
+        marginLeft: 0
+    }, 450)
+    setTimeout(function () {
+        $(".banner-rotator .item .left .rotator-button").eq(_index).animate({
+            opacity: 1,
+            marginLeft: 0
+        }, 350)
+    }, 100);
+    
+}
+var clearTablo;
+$().ready(function () {
+    var video = $("#youtubeVideo:visible").attr("data-url");
+    $("#youtubeVideo:visible").attr("src", video);
+    $(".banner-rotator .item").eq(0).addClass("loaded");
+    $(".tableNew tr").mouseover(function () { $(this).addClass("hoverHighlight") }); $(".tableNew tr").mouseout(function () { $(this).removeClass("hoverHighlight") })
+
+    $("#wrapper .banner-rotator .item  .maliyet-tablosu-btn").hover(function () {
+        $("#wrapper .banner-rotator .item  .maliyet-tablosu-bnr").stop(true, true).fadeIn();
+        $("#wrapper .banner-rotator").addClass("z-index");
+        clearTimeout(clearTablo);
+        clearInterval(_slideInterval);
+    }, function () {
+        $("#wrapper .banner-rotator .item  .maliyet-tablosu-bnr").stop(true, true).fadeOut(function () {
+            $("#wrapper .banner-rotator").removeClass("z-index");
+        });
+        clearTablo = setTimeout(function () {
+            $('#bnr-next').click();
+        }, 2000)
+    });
+    if ($("#youtubeVideo:visible").length == 1) {
+        clearInterval(_slideInterval);
+    }
+});
+
+
+
+$(document).ready(function () {
+    $('.usertext table').addClass('tblData');
+    $('.usertext ul').addClass('.list');
+
+});

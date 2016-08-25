@@ -1,0 +1,18 @@
+﻿var calculatorData;
+
+function cookie() {
+
+    $.cookie('calculator', '', { expires: -1 });
+
+    var tutarVal = $("#tutar-slider-text").val();
+    var vadeVal = $("#select-vade option:selected").val();
+
+    calculatorData = {
+        "tutar": tutarVal,
+        "vade": vadeVal
+    }
+
+    $.cookie("calculator", JSON.stringify(calculatorData), { domain: '', path: '/' });
+
+
+}

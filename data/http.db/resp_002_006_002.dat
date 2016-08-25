@@ -1,0 +1,114 @@
+﻿
+jQuery(".detay").click(function () {
+    calculate();
+
+});
+
+function calculate() {
+
+
+
+    var selectDrp = "510";
+    vade = jQuery("#select2-chosen-1").text();
+        tutar = jQuery(".calcTextbox").val();
+        faizDeger = jQuery("#faiz").text();
+        tab = "1";
+    
+        vade = vade.replace(" AY", "");
+
+    if (isNaN(tutar)) {
+        return;
+    }
+
+    if (tutar == null || tutar == "0" || tutar == NaN || tutar == "") {
+
+        alert("Lütfen vade ve tutar alanlarına 0'dan farklı bir değer giriniz.");
+        return false;
+    }
+
+    if (vade == null || vade == "0" || vade == "") {
+        alert("Lütfen vade ve tutar alanlarına 0'dan farklı bir değer giriniz.");
+        return;
+    }
+
+    if (faizDeger == null && faizDeger == 0) {
+        return;
+    }
+
+   var selectVal = "";
+
+    if (selectVal == null && selectVal == 0) {
+        return;
+    }
+    var selectValServis = "Standart-ihtiyac-Kredisi";
+
+    //konut active
+
+    //selectVal = jQuery(".selectVal:visible option:selected").val();
+    //if (selectValServis == null) {
+    //    selectValServis = selectVal;
+    //}
+    $.ajax(
+                {
+                    type: "POST",
+                    url: "/hesap-makinesi/services.aspx/hesapla",
+                    data: "{'kmh_popup_taksit' : '0','kmh_popup_kredi' : '" + tutar + "','kmh_popup_vade' : '" + vade + "','kmh_popup_faiz' : '" + faizDeger + "','kmh_popup_kredi_tipi' : '" + selectDrp + "','tab':'" + tab + "','selectDropDown':'" + selectValServis + "'}",
+
+                    contentType: "application/json; charset=utf-8",
+                    dataType: "json",
+                    async: false,
+                    cache: false,
+                    success: function (msg) {
+
+                        //   alert(msg.d);
+                        var res = msg.d.split("|", 11);
+
+                       
+                            jQuery('#spn_aylik').html(res[0] + " TL");
+                            jQuery('#spn_toplam').html(res[1] + " TL");
+                            jQuery('.odemePlani').html(res[2]);
+
+                            jQuery('#spn_plan_taksitTutari').html(res[0] + " TL");
+                            jQuery('#spn_plan_GeriOdenecekTutar').html(res[1] + " TL");
+                            jQuery('#spn_plan_tahsisUcreti').html(res[3] + " TL");
+                            jQuery('#spn_plan_faiz').html("% " + faizDeger);
+
+                            jQuery('#spn_toplam_odenecek_faiz').html(res[5] + " TL");
+                            jQuery('#spn_vergiler').html(res[6] + " TL");
+                            jQuery('#spn_krediTahsis').html(res[3] + " TL");
+                            jQuery('#spn_hayatSigortasi').html(res[7] + " TL");
+                            jQuery('#spn_ipotek').html(res[8] + " TL");
+                            jQuery('#spn_ekspertiz').html("440,00" + " TL");
+
+                            jQuery('#spn_plan_vergiler').html(res[6] + " TL");
+                            jQuery('#spn_plan_hayatSigortasi').html(res[7] + " TL");
+                            jQuery('#spn_plan_ekspertiz').html("440,00" + " TL");
+                            jQuery('#spn_plan_ipotek').html(res[8] + " TL");
+                            jQuery('#spn_YillikMaliyet').html("%"+res[10]);
+                            
+
+                        if (selectDrp == "510") {
+                            $('#basvur').show();
+                            $('#taksitBasvur').show();
+                         //   $(".maliyetTablosu").attr("href", "http://www.finansbank.com.tr/krediler/ihtiyac/kredikolay-ihtiyac/finansbank-ihtiyac-kredisi.aspx#ornek-maliyet-tablosu")
+
+                            $(".aylikTaksitTutari").children(".sonuc-box").children(".title").text("Aylık Taksit Tutarı");
+                            $(".toplamGeriOdeme").children(".sonuc-box").children(".title").text("Toplam Geri Ödeme");
+                            $(".toplamOdenecekFaiz").children(".sonuc-box").children(".title").text("Toplam Ödenecek Faiz");
+
+                            jQuery(".krediTahsisUcreti").show();
+                            jQuery(".vergiler").show();
+                            jQuery(".hayatSigortasi").show();
+
+                            jQuery(".ipotekTesisUcreti").hide();
+                            jQuery(".ekspertizUcreti").hide();
+                            jQuery("input[name*='odeme-plani']").show();
+
+                        }
+                    },
+                    error: function (x, e) {
+                         alert("The call to the server side failed. " + x.responseText);
+                    }
+                }
+            );
+}

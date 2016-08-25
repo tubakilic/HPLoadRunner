@@ -1,0 +1,13 @@
+[t8]
+FileName1=t8.html
+URL1=http://wwwtest.finansbank.com.tr/_assets/_.swf
+Total=2
+RequestHeaderFile=t8_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t8_ResponseHeader.txt
+ContentType=application/x-shockwave-flash
+SnapshotXmlFile=snapshot_8.xml
+FileName2=t8__.html
+URL2=http://wwwtest.finansbank.com.tr/_assets/_.swf
+[ProtocolInfo]
+ProtocolId=QTWeb

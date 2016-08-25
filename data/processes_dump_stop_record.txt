@@ -105,10 +105,10 @@ Failed to get information of process Id: 6008
 Failed to get information of process Id: 3944
 Failed to get information of process Id: 4940
 Failed to get information of process Id: 2328
-PROCESS 0xfe4       vugen.exe
-Failed to get information of process Id: 2496
-Failed to get information of process Id: 3252
-PROCESS 0x1430      iexplore.exe
+PROCESS 0x164c      vugen.exe
+Failed to get information of process Id: 2612
+Failed to get information of process Id: 2008
+PROCESS 0x1334      iexplore.exe
 		11.00.9600.16384 (winblue_rtm.130821-1623)C:\Program Files (x86)\Internet Explorer\IEXPLORE.EXE
 		6.3.9600.18217 (winblue_ltsb.160124-0053)C:\Windows\SYSTEM32\ntdll.dll
 		6.3.9600.18217 (winblue_ltsb.160124-0053)C:\Windows\SYSTEM32\KERNEL32.DLL
@@ -199,14 +199,14 @@ PROCESS 0x1430      iexplore.exe
 		6.3.9600.17560                C:\Windows\SYSTEM32\OLEAUT32.dll
 		12.53.1203.0                  D:\ProgramFiles\HP\LoadRunner\bin\api_trapper1.dll
 		12.53.1203.0                  D:\ProgramFiles\HP\LoadRunner\bin\WebMultiInProcNotify.dll
-		6.3.9600.16384 (winblue_rtm.130821-1623)C:\Windows\system32\uxtheme.dll
 		6.3.9600.16384 (winblue_rtm.130821-1623)C:\Windows\SYSTEM32\shcore.dll
+		6.3.9600.16384 (winblue_rtm.130821-1623)C:\Windows\system32\uxtheme.dll
 		11.00.9600.18283 (winblue_ltsb_escrow.160330-1405)C:\Windows\SYSTEM32\IEFRAME.dll
 		6.10 (winblue_rtm.130821-1623)C:\Windows\WinSxS\x86_microsoft.windows.common-controls_6595b64144ccf1df_6.0.9600.18006_none_a9ec6aab013aafee\comctl32.dll
-		6.3.9600.16384 (winblue_rtm.130821-1623)C:\Windows\system32\dwmapi.dll
 		11.00.9600.18124 (winblue_ltsb.151109-1247)C:\Program Files (x86)\Internet Explorer\IEShims.dll
 		6.3.9600.16384 (winblue_rtm.130821-1623)C:\Windows\SYSTEM32\comdlg32.dll
 		6.3.9600.17415 (winblue_r4.141028-1500)C:\Windows\SYSTEM32\kernel.appcore.dll
+		6.3.9600.16384 (winblue_rtm.130821-1623)C:\Windows\system32\dwmapi.dll
 		11.00.9600.16384 (winblue_rtm.130821-1623)C:\Windows\SYSTEM32\WININET.dll
 		12.53.1203.0                  D:\ProgramFiles\HP\LoadRunner\Bin\type_info_pool.dll
 		6.3.9600.16384 (winblue_rtm.130821-1623)C:\Windows\SYSTEM32\sxs.dll
@@ -226,10 +226,12 @@ PROCESS 0x1430      iexplore.exe
 		6.3.9600.16384 (winblue_rtm.130821-1623)C:\Windows\SYSTEM32\bcrypt.dll
 		2001.12.10530.17415 (winblue_r4.141028-1500)C:\Windows\SYSTEM32\clbcatq.dll
 		11.00.9600.18052 (winblue_ltsb.150910-0600)C:\Program Files (x86)\Internet Explorer\ieproxy.dll
+		11.00.9600.16384 (winblue_rtm.130821-1623)C:\Windows\SYSTEM32\IEUI.dll
 		11.00.9600.17278 (winblue_r2.140815-1500)C:\Windows\SYSTEM32\MSHTML.dll
+		6.3.9600.16384 (winblue_rtm.130821-1623)C:\Windows\SYSTEM32\MLANG.dll
+		7.00.9600.17031 (winblue_gdr.140221-1952)C:\Windows\SYSTEM32\PROPSYS.dll
 		6.3.9600.16384 (winblue_rtm.130821-1623)C:\Windows\SYSTEM32\DNSAPI.dll
 		6.3.9600.18124 (winblue_ltsb.151109-1247)C:\Windows\SYSTEM32\actxprxy.dll
-		11.00.9600.16384 (winblue_rtm.130821-1623)C:\Windows\SYSTEM32\IEUI.dll
 		6.3.9600.16384 (winblue_rtm.130821-1623)C:\Windows\System32\fwpuclnt.dll
 		6.3.9600.17415 (winblue_r4.141028-1500)C:\Windows\System32\rasadhlp.dll
 		12.53.1203.0                  D:\ProgramFiles\HP\LoadRunner\Bin\WebSocketAnalyzer.dll
@@ -240,26 +242,25 @@ PROCESS 0x1430      iexplore.exe
 		6.3.9600.17415 (winblue_r4.141028-1500)C:\Windows\SYSTEM32\imagehlp.dll
 		6.3.9600.17787 (winblue_r10.150331-1500)C:\Windows\SYSTEM32\dbghelp.dll
 		6.3.9600.16384 (winblue_rtm.130821-1623)C:\Windows\SYSTEM32\ninput.dll
-		6.3.9600.16384 (winblue_rtm.130821-1623)C:\Windows\SYSTEM32\MLANG.dll
-		7.00.9600.17031 (winblue_gdr.140221-1952)C:\Windows\SYSTEM32\PROPSYS.dll
 		VSCORE.15.4.0.583.x86         C:\Program Files (x86)\Common Files\McAfee\SystemCore\ScriptSn.20151019115339.dll
 		11.00.9600.17031 (winblue_gdr.140221-1952)C:\Windows\system32\JScript9.dll
 		5.8.9600.16384                C:\Windows\system32\JScript.dll
-		6.3.9600.18302 (winblue_ltsb.160409-0600)C:\Windows\system32\windowscodecs.dll
 		5.8.9600.16384                C:\Windows\system32\VBScript.dll
 		VSCORE.15.4.0.583.x86         C:\Program Files (x86)\Common Files\McAfee\SystemCore\mytilus3.dll
 		VSCORE.15.4.0.583.x86         C:\Program Files (x86)\Common Files\McAfee\SystemCore\mytilus3_worker.dll
 		6.3.9600.16384 (winblue_rtm.130821-1623)C:\Windows\SYSTEM32\LZ32.dll
 		6.3.9600.17415 (winblue_r4.141028-1500)C:\Windows\SYSTEM32\SHFOLDER.dll
 		VSCORE.15.4.0.583             C:\Program Files (x86)\McAfee\VirusScan Enterprise\RES0900\McShield.dll
-		11.00.9600.17416 (winblue_r4.141030-1500)C:\Windows\SYSTEM32\ImgUtil.dll
 		6.3.9600.16384 (winblue_rtm.130821-1623)C:\Windows\system32\msimtf.dll
 		6.3.9600.16384 (winblue_rtm.130821-1623)C:\Windows\SYSTEM32\d2d1.dll
 		6.3.9600.16384 (winblue_rtm.130821-1623)C:\Windows\SYSTEM32\DWrite.dll
 		6.3.9600.17415 (winblue_r4.141028-1500)C:\Windows\SYSTEM32\dxgi.dll
+		6.3.9600.18302 (winblue_ltsb.160409-0600)C:\Windows\system32\windowscodecs.dll
 		6.3.9600.17415 (winblue_r4.141028-1500)C:\Windows\SYSTEM32\d3d11.dll
 		6.3.9600.17415 (winblue_r4.141028-1500)C:\Windows\SYSTEM32\d3d10warp.dll
 		6.3.9600.16384 (winblue_rtm.130821-1623)C:\Windows\SYSTEM32\dcomp.dll
+		7.2.9600.17415 (winblue_r4.141028-1500)C:\Windows\SYSTEM32\OLEACC.DLL
+		11.00.9600.17416 (winblue_r4.141030-1500)C:\Windows\SYSTEM32\ImgUtil.dll
 		6.3.9600.16384 (winblue_rtm.130821-1623)C:\Windows\System32\vaultcli.dll
 		6.3.9600.17415 (winblue_r4.141028-1500)C:\Windows\SYSTEM32\T2EMBED.DLL
 		6.3.9600.17415 (winblue_r4.141028-1500)C:\Windows\system32\windowscodecsext.dll

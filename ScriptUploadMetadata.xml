@@ -21,11 +21,12 @@
     <FileEntry Name="combined_wwwtest2.c" Filter="2" />
     <FileEntry Name="pre_cci.c" Filter="2" />
     <FileEntry Name=".gitignore" Filter="1" />
-    <FileEntry Name="mdrv.log" Filter="1" />
+    <FileEntry Name="data.zip" Filter="1" />
     <FileEntry Name="mdrv_cmd.txt" Filter="1" />
     <FileEntry Name="options.txt" Filter="1" />
-    <FileEntry Name="pre_cci.c.pickle" Filter="1" />
     <FileEntry Name="ThumbnailsCache.tmp" Filter="1" />
+    <FileEntry Name="wwwtest2.c.pickle" Filter="1" />
+    <FileEntry Name="wwwtest2.ci" Filter="1" />
     <FileEntry Name=".git\" Filter="1" />
     <FileEntry Name="data\" Filter="1" />
   </GeneralFiles>
