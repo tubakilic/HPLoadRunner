@@ -1,0 +1,18 @@
+HTTP/1.1 200 OK
+Cache-Control: private
+Content-Type: text/html; charset=iso-8859-9
+Content-Encoding: gzip
+Vary: Accept-Encoding
+X-HP-CAM-COLOR: V=1;ServerAddr=p/sipF92hLQWEIbD5PU5fPjpJGi9wTptKdQKQYsaq+Q=;GUID=1|JxvKfXPpJMOIeZyzmKeckovPDzsI85U2oqKDb6ktV_-HhNmvmtuq6Gz84bKul5Xk_6-StppuQc6f4dou0UQ2EA..|L0RlZmF1bHQuYXNweA..
+Set-Cookie: FinansbankMecra=; expires=Mon, 24-Oct-2016 05:38:42 GMT; path=/; HttpOnly
+Set-Cookie: FirstClick=; expires=Mon, 24-Oct-2016 05:38:42 GMT; path=/; HttpOnly
+Set-Cookie: LastClick=; expires=Mon, 24-Oct-2016 05:38:42 GMT; path=/; HttpOnly
+Set-Cookie: AssistedKanalVeKaynaklar=; expires=Mon, 24-Oct-2016 05:38:42 GMT; path=/; HttpOnly
+Set-Cookie: FinansbankMecra=8/25/2016|(direct)|||; path=/
+Set-Cookie: FinansbankMecra=8/25/2016|(direct)|||; path=/
+Set-Cookie: FirstClick=8/25/2016|(direct)|||; path=/
+Set-Cookie: LastClick=8/25/2016|(direct)|||; path=/
+Set-Cookie: AssistedKanalVeKaynaklar=; path=/
+Date: Thu, 25 Aug 2016 05:38:41 GMT
+Content-Length: 12715
+

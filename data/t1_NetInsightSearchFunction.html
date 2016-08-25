@@ -1,0 +1,38 @@
+﻿function call_back() {
+    try {
+        document.getElementById("boxsearch_ImageButton1").click();
+    }
+    catch (err) {
+    }
+}
+
+function addPair() {
+    var searchTerm;
+    try {
+        if (document.getElementById('boxsearch_TextBox1') != null) {
+            searchTerm = document.getElementById('boxsearch_TextBox1').value;
+        }
+        else {
+            searchTerm = document.getElementById('ctl00$boxsearch$TextBox1').value;
+        }
+        var str = searchTerm;
+        for (var i = 0; i < str.length; i++) {
+            str = str.replace("ş", "s");
+            str = str.replace("ü", "u");
+            str = str.replace("ğ", "g");
+            str = str.replace("ç", "c");
+            str = str.replace("ö", "o");
+            str = str.replace("ı", "i");
+            str = str.replace("Ş", "S");
+            str = str.replace("Ü", "U");
+            str = str.replace("Ğ", "G");
+            str = str.replace("Ç", "C");
+            str = str.replace("Ö", "O");
+            str = str.replace("İ", "I");
+        }
+        ntptEventTag("websearch=" + str);
+    }
+    catch (err) {
+    }
+
+}

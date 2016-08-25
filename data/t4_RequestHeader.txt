@@ -1,0 +1,10 @@
+HEAD /_assets/_.swf HTTP/1.1
+Accept: */*
+Accept-Encoding: gzip, deflate
+User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; rv:11.0) like Gecko
+Host: wwwtest.finansbank.com.tr
+Content-Length: 0
+Connection: Keep-Alive
+Cache-Control: no-cache
+Cookie: FinansbankMecra=8/25/2016|(direct)|||; FirstClick=8/25/2016|(direct)|||; LastClick=8/25/2016|(direct)|||; AssistedKanalVeKaynaklar=
+

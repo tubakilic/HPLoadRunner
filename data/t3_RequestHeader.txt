@@ -1,0 +1,9 @@
+GET / HTTP/1.1
+Accept: text/html, application/xhtml+xml, */*
+Accept-Language: tr-TR
+User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; rv:11.0) like Gecko
+Accept-Encoding: gzip, deflate
+Host: wwwtest.finansbank.com.tr
+Connection: Keep-Alive
+Cookie: FinansbankMecra=8/25/2016|(direct)|||; FirstClick=8/25/2016|(direct)|||; LastClick=8/25/2016|(direct)|||; AssistedKanalVeKaynaklar=
+

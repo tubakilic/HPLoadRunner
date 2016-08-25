@@ -1,0 +1,8 @@
+HTTP/1.1 200 OK
+Content-Length: 852
+Content-Type: application/x-shockwave-flash
+Last-Modified: Wed, 09 Mar 2016 09:33:58 GMT
+Accept-Ranges: bytes
+ETag: "073dcee679d11:0"
+Date: Thu, 25 Aug 2016 05:38:42 GMT
+

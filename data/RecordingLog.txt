@@ -1,0 +1,438 @@
+[API Trapper      ( b14:14a4)] Recording in 32-bit mode: C:\Program Files (x86)\Internet Explorer\iexplore.exe
+[API Trapper      ( 9c0:1584)] Recording in 64-bit mode: C:\Program Files\Internet Explorer\IEXPLORE.EXE
+[API Trapper      (11a0:1604)] Recording in 32-bit mode: C:\Program Files (x86)\Internet Explorer\IEXPLORE.EXE
+[Network Analyzer (11a0: 92c)] ------------------------------------------------------------------------------------------
+[Network Analyzer (11a0: 92c)] Load Network Traffic Analyzers:
+[Network Analyzer (11a0: 92c)]     Analyzer Module: WPLUS (value=)
+[Network Analyzer (11a0: 92c)]     Analyzer Module: WebBase (value=GetHttpProtocolAnalyzer:api_http_filter.dll)
+[Network Analyzer (11a0: 92c)]     + Network Analyzer: api_http_filter.dll @ GetHttpProtocolAnalyzer Loaded!
+[Network Analyzer (11a0: 92c)]     + Interception Auditors: WinInetWplusInterceptionAudit:api_http_filter.dll
+[Network Analyzer (11a0: 92c)]     Analyzer Module: QTWeb (value=GetWebSocketProtocolAnalyzer:WebSocketAnalyzer.dll)
+[Network Analyzer (11a0: 92c)]     + Network Analyzer: WebSocketAnalyzer.dll @ GetWebSocketProtocolAnalyzer Loaded!
+[Network Analyzer (11a0: 92c)]     Analyzer Module: local_server (value=)
+[Network Analyzer (11a0: 92c)] ------------------------------------------------------------------------------------------
+[Network Analyzer (11a0: 830)] Address lookup for LRPRDAPP01 = 10.81.56.10
+[Network Analyzer (11a0:1010)] Address lookup for LRPRDAPP01 = 10.81.56.10
+[Network Analyzer (11a0: 92c)] Address lookup for LRPRDAPP01 = 10.81.56.10
+[Network Analyzer (11a0:1010)] Request Connection: Remote Server @ 62.108.67.104:80   (Service=)  (Sid=  1)  PROXIED!
+[Network Analyzer (11a0: 92c)] Request Connection: Remote Server @ 62.108.67.104:80   (Service=)  (Sid=  2)  PROXIED!
+[Web Request      (11a0: 830)] "GET /"   
+[Network Analyzer (11a0: 830)]   (Sid:  1) Client -> Server @ : 401 bytes (Service=HTTP)
+[Network Analyzer (11a0:1010)] Address lookup for LRPRDAPP01 = 10.81.56.10
+[Network Analyzer (11a0:1010)] Request Connection: Remote Server @ 62.108.67.104:80   (Service=)  (Sid=  3)  PROXIED!
+[Network Analyzer (11a0:1010)] Address lookup for LRPRDAPP01 = 10.81.56.10
+[Network Analyzer (11a0:1010)] Request Connection: Remote Server @ 62.108.67.104:80   (Service=)  (Sid=  4)  PROXIED!
+[Network Analyzer (11a0:1010)] Address lookup for LRPRDAPP01 = 10.81.56.10
+[Network Analyzer (11a0:1010)] Request Connection: Remote Server @ 62.108.67.104:80   (Service=)  (Sid=  5)  PROXIED!
+[Network Analyzer (11a0: 830)]   (Sid:  1) Server -> Client : 4100 bytes  (Service=HTTP)
+[Network Analyzer (11a0:1010)] Address lookup for LRPRDAPP01 = 10.81.56.10
+[Network Analyzer (11a0: 830)]   (Sid:  1) Server -> Client : 9622 bytes  (Service=HTTP)
+[Network Analyzer (11a0:1010)] Request Connection: Remote Server @ 62.108.67.104:80   (Service=)  (Sid=  6)  PROXIED!
+[Web Request      (11a0: 830)] "GET /css/jquery.jscrollpane.css"   
+[Network Analyzer (11a0: 830)]   (Sid:  1) Client -> Server @ : 447 bytes (Service=HTTP)
+[Web Request      (11a0: 830)] "GET /css/select2/select2.css"   
+[Network Analyzer (11a0: 830)]   (Sid:  2) Client -> Server @ : 444 bytes (Service=HTTP)
+[Web Request      (11a0: 830)] "GET /css/jquery.modal.css"   
+[Network Analyzer (11a0: 830)]   (Sid:  3) Client -> Server @ : 441 bytes (Service=HTTP)
+[Web Request      (11a0: 830)] "GET /css/main.css"   
+[Network Analyzer (11a0: 830)]   (Sid:  4) Client -> Server @ : 433 bytes (Service=HTTP)
+[Web Request      (11a0: 830)] "GET /css/homepage.css"   
+[Network Analyzer (11a0: 830)]   (Sid:  5) Client -> Server @ : 437 bytes (Service=HTTP)
+[Web Request      (11a0: 830)] "GET /css/jquery.smartbanner.css"   
+[Network Analyzer (11a0: 830)]   (Sid:  6) Client -> Server @ : 447 bytes (Service=HTTP)
+[Network Analyzer (11a0: 830)]   (Sid:  1) Server -> Client : 938 bytes  (Service=HTTP)
+[Network Analyzer (11a0: 830)]   (Sid:  2) Server -> Client : 3792 bytes  (Service=HTTP)
+[Network Analyzer (11a0: 830)]   (Sid:  3) Server -> Client : 4520 bytes  (Service=HTTP)
+[Network Analyzer (11a0: ff0)] Address lookup for LRPRDAPP01 = 10.81.56.10
+[Web Request      (11a0: 830)] "GET /js/jquery-1.9.0.min.js"   
+[Network Analyzer (11a0: 830)]   (Sid:  1) Client -> Server @ : 463 bytes (Service=HTTP)
+[Network Analyzer (11a0: 830)]   (Sid:  4) Server -> Client : 16384 bytes  (Service=HTTP)
+[Network Analyzer (11a0: 830)]   (Sid:  5) Server -> Client : 5151 bytes  (Service=HTTP)
+[Network Analyzer (11a0: 830)]   (Sid:  6) Server -> Client : 1670 bytes  (Service=HTTP)
+[Network Analyzer (11a0: 830)]   (Sid:  1) Server -> Client : 16384 bytes  (Service=HTTP)
+[Web Request      (11a0: 830)] "GET /js/jquery.flash.js"   
+[Network Analyzer (11a0: 830)]   (Sid:  2) Client -> Server @ : 459 bytes (Service=HTTP)
+[Web Request      (11a0: 830)] "GET /js/jquery-migrate-1.0.0.js"   
+[Network Analyzer (11a0: 830)]   (Sid:  3) Client -> Server @ : 467 bytes (Service=HTTP)
+[Network Analyzer (11a0: 830)]   (Sid:  4) Server -> Client : 16384 bytes  (Service=HTTP)
+[Web Request      (11a0: 830)] "GET /js/main.js"   
+[Network Analyzer (11a0: 830)]   (Sid:  5) Client -> Server @ : 451 bytes (Service=HTTP)
+[Network Analyzer (11a0: 830)]   (Sid:  1) Server -> Client : 16384 bytes  (Service=HTTP)
+[Network Analyzer (11a0: 830)]   (Sid:  3) Server -> Client : 7993 bytes  (Service=HTTP)
+[Network Analyzer (11a0: 830)]   (Sid:  4) Server -> Client : 9496 bytes  (Service=HTTP)
+[Web Request      (11a0: 830)] "GET /js/checkpoint.min.js"   
+[Network Analyzer (11a0: 830)]   (Sid:  6) Client -> Server @ : 461 bytes (Service=HTTP)
+[Network Analyzer (11a0: 830)]   (Sid:  1) Server -> Client : 16384 bytes  (Service=HTTP)
+[Network Analyzer (11a0: 830)]   (Sid:  2) Server -> Client : 2847 bytes  (Service=HTTP)
+[Network Analyzer (11a0: 830)]   (Sid:  5) Server -> Client : 16384 bytes  (Service=HTTP)
+[Network Analyzer (11a0: 830)]   (Sid:  1) Server -> Client : 16384 bytes  (Service=HTTP)
+[Web Request      (11a0: 830)] "GET /js/select2/select2.min.js"   
+[Network Analyzer (11a0: 830)]   (Sid:  3) Client -> Server @ : 466 bytes (Service=HTTP)
+[Network Analyzer (11a0: 830)]   (Sid:  5) Server -> Client : 8065 bytes  (Service=HTTP)
+[Network Analyzer (11a0: 830)]   (Sid:  6) Server -> Client : 2305 bytes  (Service=HTTP)
+[Network Analyzer (11a0: 830)]   (Sid:  1) Server -> Client : 16384 bytes  (Service=HTTP)
+[Web Request      (11a0: 830)] "GET /js/jquery-imask.js"   
+[Network Analyzer (11a0: 830)]   (Sid:  2) Client -> Server @ : 459 bytes (Service=HTTP)
+[Network Analyzer (11a0: 830)]   (Sid:  3) Server -> Client : 16384 bytes  (Service=HTTP)
+[Web Request      (11a0: 830)] "GET /js/magiclick.ui.min.js"   
+[Network Analyzer (11a0: 830)]   (Sid:  4) Client -> Server @ : 463 bytes (Service=HTTP)
+[Web Request      (11a0: 830)] "GET /js/jquery.number.min.js"   
+[Network Analyzer (11a0: 830)]   (Sid:  6) Client -> Server @ : 464 bytes (Service=HTTP)
+[Network Analyzer (11a0: 830)]   (Sid:  1) Server -> Client : 16384 bytes  (Service=HTTP)
+[Network Analyzer (11a0: 830)]   (Sid:  2) Server -> Client : 16384 bytes  (Service=HTTP)
+[Network Analyzer (11a0: 830)]   (Sid:  3) Server -> Client : 16384 bytes  (Service=HTTP)
+[Web Request      (11a0: 830)] "GET /js/jquery.ui.touch-punch.min.js"   
+[Network Analyzer (11a0: 830)]   (Sid:  5) Client -> Server @ : 472 bytes (Service=HTTP)
+[Network Analyzer (11a0: 830)]   (Sid:  1) Server -> Client : 16384 bytes  (Service=HTTP)
+[Network Analyzer (11a0: 830)]   (Sid:  2) Server -> Client : 2407 bytes  (Service=HTTP)
+[Network Analyzer (11a0: 830)]   (Sid:  3) Server -> Client : 16384 bytes  (Service=HTTP)
+[Network Analyzer (11a0: 830)]   (Sid:  4) Server -> Client : 16384 bytes  (Service=HTTP)
+[Network Analyzer (11a0: 830)]   (Sid:  6) Server -> Client : 6692 bytes  (Service=HTTP)
+[Network Analyzer (11a0: 830)]   (Sid:  1) Server -> Client : 16384 bytes  (Service=HTTP)
+[Network Analyzer (11a0: 830)]   (Sid:  3) Server -> Client : 16384 bytes  (Service=HTTP)
+[Network Analyzer (11a0: 830)]   (Sid:  4) Server -> Client : 16384 bytes  (Service=HTTP)
+[Network Analyzer (11a0: 830)]   (Sid:  5) Server -> Client : 1499 bytes  (Service=HTTP)
+[Network Analyzer (11a0: 830)]   (Sid:  1) Server -> Client : 16384 bytes  (Service=HTTP)
+[Web Request      (11a0: 830)] "GET /js/jquery.modal.js"   
+[Network Analyzer (11a0: 830)]   (Sid:  2) Client -> Server @ : 459 bytes (Service=HTTP)
+[Network Analyzer (11a0: 830)]   (Sid:  3) Server -> Client : 816 bytes  (Service=HTTP)
+[Network Analyzer (11a0: 830)]   (Sid:  4) Server -> Client : 16384 bytes  (Service=HTTP)
+[Web Request      (11a0: 830)] "GET /js/footable.js"   
+[Network Analyzer (11a0: 830)]   (Sid:  6) Client -> Server @ : 455 bytes (Service=HTTP)
+[Network Analyzer (11a0: 830)]   (Sid:  1) Server -> Client : 16384 bytes  (Service=HTTP)
+[Network Analyzer (11a0: 830)]   (Sid:  2) Server -> Client : 6844 bytes  (Service=HTTP)
+[Web Request      (11a0: 830)] "GET /js/jquery.mousewheel.js"   
+[Network Analyzer (11a0: 830)]   (Sid:  3) Client -> Server @ : 464 bytes (Service=HTTP)
+[Network Analyzer (11a0: 830)]   (Sid:  4) Server -> Client : 16384 bytes  (Service=HTTP)
+[Web Request      (11a0: 830)] "GET /js/jquery.jscrollpane.min.js"   
+[Network Analyzer (11a0: 830)]   (Sid:  5) Client -> Server @ : 469 bytes (Service=HTTP)
+[Network Analyzer (11a0: 830)]   (Sid:  1) Server -> Client : 16384 bytes  (Service=HTTP)
+[Network Analyzer (11a0: 830)]   (Sid:  3) Server -> Client : 8483 bytes  (Service=HTTP)
+[Network Analyzer (11a0: 830)]   (Sid:  4) Server -> Client : 3685 bytes  (Service=HTTP)
+[Network Analyzer (11a0: 830)]   (Sid:  6) Server -> Client : 16384 bytes  (Service=HTTP)
+[Network Analyzer (11a0: 830)]   (Sid:  1) Server -> Client : 16384 bytes  (Service=HTTP)
+[Web Request      (11a0: 830)] "GET /js/jquery.cookie.js"   
+[Network Analyzer (11a0: 830)]   (Sid:  2) Client -> Server @ : 460 bytes (Service=HTTP)
+[Web Request      (11a0: 830)] "GET /js/setKrediCookie.js"   
+[Network Analyzer (11a0: 830)]   (Sid:  3) Client -> Server @ : 461 bytes (Service=HTTP)
+[Web Request      (11a0: 830)] "GET /BehaviorPad/assets/js/bquery.js.load.aspx"   
+[Network Analyzer (11a0: 830)]   (Sid:  4) Client -> Server @ : 482 bytes (Service=HTTP)
+[Network Analyzer (11a0: 830)]   (Sid:  5) Server -> Client : 15061 bytes  (Service=HTTP)
+[Network Analyzer (11a0: 830)]   (Sid:  6) Server -> Client : 16384 bytes  (Service=HTTP)
+[Network Analyzer (11a0: 830)]   (Sid:  1) Server -> Client : 16384 bytes  (Service=HTTP)
+[Network Analyzer (11a0: 830)]   (Sid:  2) Server -> Client : 1778 bytes  (Service=HTTP)
+[Network Analyzer (11a0: 830)]   (Sid:  3) Server -> Client : 600 bytes  (Service=HTTP)
+[Network Analyzer (11a0: 830)]   (Sid:  4) Server -> Client : 510 bytes  (Service=HTTP)
+[Network Analyzer (11a0: 830)]   (Sid:  6) Server -> Client : 6648 bytes  (Service=HTTP)
+[Network Analyzer (11a0: 830)]   (Sid:  1) Server -> Client : 16384 bytes  (Service=HTTP)
+[Web Request      (11a0: 830)] "GET /js/jquery.smartbanner.js"   
+[Network Analyzer (11a0: 830)]   (Sid:  2) Client -> Server @ : 465 bytes (Service=HTTP)
+[Web Request      (11a0: 830)] "GET /BehaviorPad/assets/js/behaviorpad.js.load.aspx"   
+[Network Analyzer (11a0: 830)]   (Sid:  3) Client -> Server @ : 487 bytes (Service=HTTP)
+[Web Request      (11a0: 830)] "GET /js/fb.footer.js"   
+[Network Analyzer (11a0: 830)]   (Sid:  4) Client -> Server @ : 456 bytes (Service=HTTP)
+[Web Request      (11a0: 830)] "GET /js/NetInsightSearchFunction.js"   
+[Network Analyzer (11a0: 830)]   (Sid:  5) Client -> Server @ : 471 bytes (Service=HTTP)
+[Network Analyzer (11a0: 830)]   (Sid:  1) Server -> Client : 16384 bytes  (Service=HTTP)
+[Network Analyzer (11a0: 830)]   (Sid:  2) Server -> Client : 6131 bytes  (Service=HTTP)
+[Web Request      (11a0: 830)] "GET /js/HomePageCalculateLoan.js"   
+[Network Analyzer (11a0: 830)]   (Sid:  6) Client -> Server @ : 468 bytes (Service=HTTP)
+[Network Analyzer (11a0: 830)]   (Sid:  1) Server -> Client : 16384 bytes  (Service=HTTP)
+[Network Analyzer (11a0: 830)]   (Sid:  3) Server -> Client : 518 bytes  (Service=HTTP)
+[Network Analyzer (11a0: 830)]   (Sid:  4) Server -> Client : 2630 bytes  (Service=HTTP)
+[Network Analyzer (11a0: 830)]   (Sid:  5) Server -> Client : 1365 bytes  (Service=HTTP)
+[Network Analyzer (11a0: 830)]   (Sid:  1) Server -> Client : 6447 bytes  (Service=HTTP)
+[Web Request      (11a0: 830)] "GET /images/_topnavigation/btn_search_submit.gif"   
+[Network Analyzer (11a0: 830)]   (Sid:  2) Client -> Server @ : 501 bytes (Service=HTTP)
+[Web Request      (11a0: 830)] "GET /images/_home-new/logo-new.png"   
+[Network Analyzer (11a0: 830)]   (Sid:  3) Client -> Server @ : 487 bytes (Service=HTTP)
+[Web Request      (11a0: 830)] "GET /images/_home-new/calcTitle.jpg"   
+[Network Analyzer (11a0: 830)]   (Sid:  4) Client -> Server @ : 488 bytes (Service=HTTP)
+[Web Request      (11a0: 830)] "GET /banner/media/681/ABAV2/button.aspx"   
+[Network Analyzer (11a0: 830)]   (Sid:  5) Client -> Server @ : 492 bytes (Service=HTTP)
+[Network Analyzer (11a0: 830)]   (Sid:  6) Server -> Client : 4953 bytes  (Service=HTTP)
+[Network Analyzer (11a0: 830)]   (Sid:  2) Server -> Client : 1607 bytes  (Service=HTTP)
+[Network Analyzer (11a0: 830)]   (Sid:  3) Server -> Client : 2544 bytes  (Service=HTTP)
+[Network Analyzer (11a0: 830)]   (Sid:  4) Server -> Client : 8451 bytes  (Service=HTTP)
+[Web Request      (11a0: 830)] "GET /banner/media/691/ABAV2/button.aspx"   
+[Network Analyzer (11a0: 830)]   (Sid:  1) Client -> Server @ : 492 bytes (Service=HTTP)
+[Web Request      (11a0: 830)] "GET /images/footer/social/facebooktaTakipEt.png"   
+[Network Analyzer (11a0: 830)]   (Sid:  2) Client -> Server @ : 500 bytes (Service=HTTP)
+[Web Request      (11a0: 830)] "GET /images/footer/social/twitterdaTakipEt.png"   
+[Network Analyzer (11a0: 830)]   (Sid:  3) Client -> Server @ : 499 bytes (Service=HTTP)
+[Network Analyzer (11a0: 830)]   (Sid:  5) Server -> Client : 640 bytes  (Service=HTTP)
+[Web Request      (11a0: 830)] "GET /banner/media/682/ABAV2/button.aspx"   
+[Network Analyzer (11a0: 830)]   (Sid:  6) Client -> Server @ : 492 bytes (Service=HTTP)
+[Network Analyzer (11a0: 830)]   (Sid:  1) Server -> Client : 1129 bytes  (Service=HTTP)
+[Network Analyzer (11a0: 830)]   (Sid:  2) Server -> Client : 1569 bytes  (Service=HTTP)
+[Network Analyzer (11a0: 830)]   (Sid:  3) Server -> Client : 1556 bytes  (Service=HTTP)
+[Web Request      (11a0: 830)] "GET /images/google-plus-buble.png"   
+[Network Analyzer (11a0: 830)]   (Sid:  4) Client -> Server @ : 486 bytes (Service=HTTP)
+[Web Request      (11a0: 830)] "GET /banner/media/681/ABAV2/FileNotFound.htm?aspxerrorpath=/CMSMediaDownloader.axd"   
+[Network Analyzer (11a0: 830)]   (Sid:  5) Client -> Server @ : 535 bytes (Service=HTTP)
+[Network Analyzer (11a0: 830)]   (Sid:  6) Server -> Client : 640 bytes  (Service=HTTP)
+[Network Analyzer (11a0: 830)]   (Sid:  4) Server -> Client : 4350 bytes  (Service=HTTP)
+[Network Analyzer (11a0: 830)]   (Sid:  5) Server -> Client : 2555 bytes  (Service=HTTP)
+[Web Request      (11a0: 830)] "GET /banner/media/682/ABAV2/FileNotFound.htm?aspxerrorpath=/CMSMediaDownloader.axd"   
+[Network Analyzer (11a0: 830)]   (Sid:  6) Client -> Server @ : 535 bytes (Service=HTTP)
+[Network Analyzer (11a0: 830)]   (Sid:  6) Server -> Client : 2555 bytes  (Service=HTTP)
+[Network Analyzer (11a0:1010)] Address lookup for LRPRDAPP01 = 10.81.56.10
+[Network Analyzer (11a0: 92c)] Address lookup for LRPRDAPP01 = 10.81.56.10
+[Web Request      (11a0: 830)] "HEAD /_assets/_.swf"   
+[Network Analyzer (11a0: 830)]   (Sid:  6) Client -> Server @ : 401 bytes (Service=HTTP)
+[Network Analyzer (11a0: 830)]   (Sid:  6) Server -> Client : 215 bytes  (Service=HTTP)
+[Web Request      (11a0: 830)] "GET /fonts/opensans-regular.eot?"   
+[Network Analyzer (11a0: 830)]   (Sid:  6) Client -> Server @ : 480 bytes (Service=HTTP)
+[Web Request      (11a0: 830)] "GET /fonts/Ubuntu-R-webfont.eot?"   
+[Network Analyzer (11a0: 830)]   (Sid:  5) Client -> Server @ : 480 bytes (Service=HTTP)
+[Web Request      (11a0: 830)] "GET /images/footer/tel-sp.png"   
+[Network Analyzer (11a0: 830)]   (Sid:  4) Client -> Server @ : 482 bytes (Service=HTTP)
+[Web Request      (11a0: 830)] "GET /images/_home-new/basvuru-arrow.png"   
+[Network Analyzer (11a0: 830)]   (Sid:  2) Client -> Server @ : 492 bytes (Service=HTTP)
+[Web Request      (11a0: 830)] "GET /images/footer/social/socialN.png"   
+[Network Analyzer (11a0: 830)]   (Sid:  3) Client -> Server @ : 490 bytes (Service=HTTP)
+[Network Analyzer (11a0: 830)]   (Sid:  5) Server -> Client : 16384 bytes  (Service=HTTP)
+[Net An. Warning  (11a0: ff0)] Request Connection: Remote Server @ 216.58.212.34:80 (Service=) Failed attempt #1. Unable to connect to remote server: rc = -1 , le = 10061)
+[Network Analyzer (11a0: 830)]   (Sid:  6) Server -> Client : 16384 bytes  (Service=HTTP)
+[Web Request      (11a0: 830)] "GET /images/_topnavigation/new-topnavigation/topnavigation.png?v2"   
+[Network Analyzer (11a0: 830)]   (Sid:  1) Client -> Server @ : 518 bytes (Service=HTTP)
+[Network Analyzer (11a0: 830)]   (Sid:  2) Server -> Client : 384 bytes  (Service=HTTP)
+[Network Analyzer (11a0: 830)]   (Sid:  3) Server -> Client : 3873 bytes  (Service=HTTP)
+[Network Analyzer (11a0: 830)]   (Sid:  4) Server -> Client : 6996 bytes  (Service=HTTP)
+[Network Analyzer (11a0: 830)]   (Sid:  5) Server -> Client : 16384 bytes  (Service=HTTP)
+[Network Analyzer (11a0: 830)]   (Sid:  6) Server -> Client : 16384 bytes  (Service=HTTP)
+[Network Analyzer (11a0: 830)]   (Sid:  1) Server -> Client : 9576 bytes  (Service=HTTP)
+[Web Request      (11a0: 830)] "GET /images/_home-new/searchErrorArrow.png"   
+[Network Analyzer (11a0: 830)]   (Sid:  2) Client -> Server @ : 495 bytes (Service=HTTP)
+[Network Analyzer (11a0: 830)]   (Sid:  5) Server -> Client : 16384 bytes  (Service=HTTP)
+[Network Analyzer (11a0: 830)]   (Sid:  6) Server -> Client : 16384 bytes  (Service=HTTP)
+[Web Request      (11a0: 830)] "GET /images/_home-new/kampanyalarIcon.png"   
+[Network Analyzer (11a0: 830)]   (Sid:  3) Client -> Server @ : 494 bytes (Service=HTTP)
+[Web Request      (11a0: 830)] "GET /images/_home-new/intSubeBtnSet.jpg"   
+[Network Analyzer (11a0: 830)]   (Sid:  4) Client -> Server @ : 492 bytes (Service=HTTP)
+[Network Analyzer (11a0: 830)]   (Sid:  5) Server -> Client : 16384 bytes  (Service=HTTP)
+[Network Analyzer (11a0: 830)]   (Sid:  6) Server -> Client : 8176 bytes  (Service=HTTP)
+[Web Request      (11a0: 830)] "GET /images/_home-new/calcArrow.jpg"   
+[Network Analyzer (11a0: 830)]   (Sid:  1) Client -> Server @ : 488 bytes (Service=HTTP)
+[Network Analyzer (11a0: 830)]   (Sid:  2) Server -> Client : 395 bytes  (Service=HTTP)
+[Network Analyzer (11a0: 830)]   (Sid:  3) Server -> Client : 513 bytes  (Service=HTTP)
+[Network Analyzer (11a0: 830)]   (Sid:  4) Server -> Client : 16384 bytes  (Service=HTTP)
+[Network Analyzer (11a0: 830)]   (Sid:  5) Server -> Client : 16384 bytes  (Service=HTTP)
+[Network Analyzer ( 9c0:139c)] ------------------------------------------------------------------------------------------
+[Network Analyzer ( 9c0:139c)] Load Network Traffic Analyzers:
+[Network Analyzer ( 9c0:139c)]     Analyzer Module: WPLUS (value=)
+[Network Analyzer ( 9c0:139c)]     Analyzer Module: WebBase (value=GetHttpProtocolAnalyzer:api_http_filter_x64.dll)
+[Network Analyzer ( 9c0:139c)]     + Network Analyzer: api_http_filter_x64.dll @ GetHttpProtocolAnalyzer Loaded!
+[Network Analyzer ( 9c0:139c)]     + Interception Auditors: WinInetWplusInterceptionAudit:api_http_filter_x64.dll
+[Network Analyzer ( 9c0:139c)]     Analyzer Module: QTWeb (value=GetWebSocketProtocolAnalyzer:WebSocketAnalyzer_x64.dll)
+[Network Analyzer ( 9c0:139c)]     + Network Analyzer: WebSocketAnalyzer_x64.dll @ GetWebSocketProtocolAnalyzer Loaded!
+[Network Analyzer ( 9c0:139c)]     Analyzer Module: local_server (value=)
+[Network Analyzer ( 9c0:139c)] ------------------------------------------------------------------------------------------
+[Network Analyzer ( 9c0: 9ac)] Address lookup for LRPRDAPP01 = 10.81.56.10
+[Network Analyzer ( 9c0:1214)] Address lookup for LRPRDAPP01 = 10.81.56.10
+[Network Analyzer ( 9c0:139c)] Address lookup for LRPRDAPP01 = 10.81.56.10
+[Network Analyzer ( 9c0:12f0)] Address lookup for LRPRDAPP01 = 10.81.56.10
+[Network Analyzer ( 9c0:1580)] Address lookup for LRPRDAPP01 = 10.81.56.10
+[Net An. Warning  ( 9c0:1214)] Request Connection: Remote Server @ 204.79.197.200:80 (Service=) Failed attempt #1. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Warning  ( 9c0:139c)] Request Connection: Remote Server @ 204.79.197.200:80 (Service=) Failed attempt #1. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Warning  ( 9c0:12f0)] Request Connection: Remote Server @ 23.50.156.109:443 (Service=) Failed attempt #1. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Warning  ( 9c0:1580)] Request Connection: Remote Server @ 23.50.156.109:443 (Service=) Failed attempt #1. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Warning  ( 9c0:139c)] Request Connection: Remote Server @ 204.79.197.200:80 (Service=) Failed attempt #2. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Warning  ( 9c0:12f0)] Request Connection: Remote Server @ 23.50.156.109:443 (Service=) Failed attempt #2. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Warning  ( 9c0:1580)] Request Connection: Remote Server @ 23.50.156.109:443 (Service=) Failed attempt #2. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Warning  ( 9c0:1214)] Request Connection: Remote Server @ 204.79.197.200:80 (Service=) Failed attempt #2. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Warning  ( 9c0:12f0)] Request Connection: Remote Server @ 23.50.156.109:443 (Service=) Failed attempt #3. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Warning  ( 9c0:1580)] Request Connection: Remote Server @ 23.50.156.109:443 (Service=) Failed attempt #3. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Warning  ( 9c0:1214)] Request Connection: Remote Server @ 204.79.197.200:80 (Service=) Failed attempt #3. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Warning  ( 9c0:139c)] Request Connection: Remote Server @ 204.79.197.200:80 (Service=) Failed attempt #3. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Error    ( 9c0:12f0)] Request Connection: Remote Server @ 23.50.156.109:443   (Service=)  NOT PROXIED! (REASON: Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Error    ( 9c0:1580)] Request Connection: Remote Server @ 23.50.156.109:443   (Service=)  NOT PROXIED! (REASON: Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Error    ( 9c0:1214)] Request Connection: Remote Server @ 204.79.197.200:80   (Service=)  NOT PROXIED! (REASON: Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Error    ( 9c0:139c)] Request Connection: Remote Server @ 204.79.197.200:80   (Service=)  NOT PROXIED! (REASON: Unable to connect to remote server: rc = -1 , le = 10061)
+[Network Analyzer ( 9c0:1214)] Address lookup for LRPRDAPP01 = 10.81.56.10
+[Network Analyzer ( 9c0:1580)] Address lookup for LRPRDAPP01 = 10.81.56.10
+[Network Analyzer ( 9c0:12f0)] Address lookup for LRPRDAPP01 = 10.81.56.10
+[Net An. Warning  ( 9c0:1214)] Request Connection: Remote Server @ 23.50.156.109:443 (Service=) Failed attempt #1. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Warning  ( 9c0:1580)] Request Connection: Remote Server @ 23.50.156.109:443 (Service=) Failed attempt #1. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Warning  ( 9c0:12f0)] Request Connection: Remote Server @ 204.79.197.200:80 (Service=) Failed attempt #1. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Warning  ( 9c0:1214)] Request Connection: Remote Server @ 23.50.156.109:443 (Service=) Failed attempt #2. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Warning  ( 9c0:1580)] Request Connection: Remote Server @ 23.50.156.109:443 (Service=) Failed attempt #2. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Warning  ( 9c0:12f0)] Request Connection: Remote Server @ 204.79.197.200:80 (Service=) Failed attempt #2. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Warning  ( 9c0:1214)] Request Connection: Remote Server @ 23.50.156.109:443 (Service=) Failed attempt #3. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Warning  ( 9c0:12f0)] Request Connection: Remote Server @ 204.79.197.200:80 (Service=) Failed attempt #3. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Warning  ( 9c0:1580)] Request Connection: Remote Server @ 23.50.156.109:443 (Service=) Failed attempt #3. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Error    ( 9c0:1214)] Request Connection: Remote Server @ 23.50.156.109:443   (Service=)  NOT PROXIED! (REASON: Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Error    ( 9c0:12f0)] Request Connection: Remote Server @ 204.79.197.200:80   (Service=)  NOT PROXIED! (REASON: Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Error    ( 9c0:1580)] Request Connection: Remote Server @ 23.50.156.109:443   (Service=)  NOT PROXIED! (REASON: Unable to connect to remote server: rc = -1 , le = 10061)
+[Network Analyzer ( 9c0:1674)] Address lookup for LRPRDAPP01 = 10.81.56.10
+[Net An. Warning  ( 9c0:1674)] Request Connection: Remote Server @ 93.184.221.200:443 (Service=) Failed attempt #1. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Warning  (11a0: 92c)] Request Connection: Remote Server @ 216.58.212.8:80 (Service=) Failed attempt #1. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Warning  (11a0:1010)] Request Connection: Remote Server @ 74.125.206.154:80 (Service=) Failed attempt #1. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Warning  (11a0: ff0)] Request Connection: Remote Server @ 216.58.212.34:80 (Service=) Failed attempt #2. Unable to connect to remote server: rc = -1 , le = 10061)
+[API Trapper      (1430:15b4)] Recording in 32-bit mode: C:\Program Files (x86)\Internet Explorer\IEXPLORE.EXE
+[Net An. Warning  ( 9c0:1674)] Request Connection: Remote Server @ 93.184.221.200:443 (Service=) Failed attempt #2. Unable to connect to remote server: rc = -1 , le = 10061)
+[Network Analyzer (1430:167c)] ------------------------------------------------------------------------------------------
+[Network Analyzer (1430:167c)] Load Network Traffic Analyzers:
+[Network Analyzer (1430:167c)]     Analyzer Module: WPLUS (value=)
+[Network Analyzer (1430:167c)]     Analyzer Module: WebBase (value=GetHttpProtocolAnalyzer:api_http_filter.dll)
+[Network Analyzer (1430:167c)]     + Network Analyzer: api_http_filter.dll @ GetHttpProtocolAnalyzer Loaded!
+[Network Analyzer (1430:167c)]     + Interception Auditors: WinInetWplusInterceptionAudit:api_http_filter.dll
+[Network Analyzer (1430:167c)]     Analyzer Module: QTWeb (value=GetWebSocketProtocolAnalyzer:WebSocketAnalyzer.dll)
+[Network Analyzer (1430:167c)]     + Network Analyzer: WebSocketAnalyzer.dll @ GetWebSocketProtocolAnalyzer Loaded!
+[Network Analyzer (1430:167c)]     Analyzer Module: local_server (value=)
+[Network Analyzer (1430:167c)] ------------------------------------------------------------------------------------------
+[Network Analyzer (1430:1724)] Address lookup for LRPRDAPP01 = 10.81.56.10
+[Net An. Warning  ( 9c0:1674)] Request Connection: Remote Server @ 93.184.221.200:443 (Service=) Failed attempt #3. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Error    ( 9c0:1674)] Request Connection: Remote Server @ 93.184.221.200:443   (Service=)  NOT PROXIED! (REASON: Unable to connect to remote server: rc = -1 , le = 10061)
+[Network Analyzer (1430: b64)] Address lookup for LRPRDAPP01 = 10.81.56.10
+[Network Analyzer (1430:167c)] Address lookup for LRPRDAPP01 = 10.81.56.10
+[Network Analyzer (1430: b64)] Request Connection: Remote Server @ 62.108.67.104:80   (Service=)  (Sid=  1)  PROXIED!
+[Web Request      (1430:1724)] "GET /"   
+[Network Analyzer (1430:1724)]   (Sid:  1) Client -> Server @ : 401 bytes (Service=HTTP)
+[Network Analyzer (1430:167c)] Request Connection: Remote Server @ 62.108.67.104:80   (Service=)  (Sid=  2)  PROXIED!
+[Network Analyzer (1430: b64)] Address lookup for LRPRDAPP01 = 10.81.56.10
+[Network Analyzer (1430: b64)] Request Connection: Remote Server @ 62.108.67.104:80   (Service=)  (Sid=  3)  PROXIED!
+[Network Analyzer (1430: b64)] Address lookup for LRPRDAPP01 = 10.81.56.10
+[Network Analyzer (1430: b64)] Request Connection: Remote Server @ 62.108.67.104:80   (Service=)  (Sid=  4)  PROXIED!
+[Network Analyzer (1430: b64)] Address lookup for LRPRDAPP01 = 10.81.56.10
+[Network Analyzer (1430:1724)]   (Sid:  1) Server -> Client : 4100 bytes  (Service=HTTP)
+[Network Analyzer (1430:1724)]   (Sid:  1) Server -> Client : 9622 bytes  (Service=HTTP)
+[Network Analyzer (1430: b64)] Request Connection: Remote Server @ 62.108.67.104:80   (Service=)  (Sid=  5)  PROXIED!
+[Network Analyzer (1430: b64)] Address lookup for LRPRDAPP01 = 10.81.56.10
+[Network Analyzer (1430: b64)] Request Connection: Remote Server @ 62.108.67.104:80   (Service=)  (Sid=  6)  PROXIED!
+[Web Request      (1430:1724)] "GET /BehaviorPad/assets/js/bquery.js.load.aspx"   
+[Network Analyzer (1430:1724)]   (Sid:  1) Client -> Server @ : 482 bytes (Service=HTTP)
+[Web Request      (1430:1724)] "GET /BehaviorPad/assets/js/behaviorpad.js.load.aspx"   
+[Network Analyzer (1430:1724)]   (Sid:  2) Client -> Server @ : 487 bytes (Service=HTTP)
+[Network Analyzer (1430:1724)]   (Sid:  1) Server -> Client : 510 bytes  (Service=HTTP)
+[Network Analyzer (1430:1724)]   (Sid:  2) Server -> Client : 518 bytes  (Service=HTTP)
+[Web Request      (1430:1724)] "GET /banner/media/681/ABAV2/button.aspx"   
+[Network Analyzer (1430:1724)]   (Sid:  2) Client -> Server @ : 492 bytes (Service=HTTP)
+[Web Request      (1430:1724)] "GET /banner/media/682/ABAV2/button.aspx"   
+[Network Analyzer (1430:1724)]   (Sid:  3) Client -> Server @ : 492 bytes (Service=HTTP)
+[Network Analyzer (1430:1724)]   (Sid:  3) Server -> Client : 640 bytes  (Service=HTTP)
+[Network Analyzer (1430: b64)] Address lookup for LRPRDAPP01 = 10.81.56.10
+[Web Request      (1430:1724)] "GET /banner/media/682/ABAV2/FileNotFound.htm?aspxerrorpath=/CMSMediaDownloader.axd"   
+[Network Analyzer (1430:1724)]   (Sid:  3) Client -> Server @ : 535 bytes (Service=HTTP)
+[Network Analyzer (1430:1724)]   (Sid:  3) Server -> Client : 2555 bytes  (Service=HTTP)
+[Network Analyzer (1430:1724)]   (Sid:  2) Server -> Client : 640 bytes  (Service=HTTP)
+[Web Request      (1430:1724)] "GET /banner/media/681/ABAV2/FileNotFound.htm?aspxerrorpath=/CMSMediaDownloader.axd"   
+[Network Analyzer (1430:1724)]   (Sid:  2) Client -> Server @ : 535 bytes (Service=HTTP)
+[Network Analyzer (1430:1724)]   (Sid:  2) Server -> Client : 2555 bytes  (Service=HTTP)
+[Network Analyzer (1430:167c)] Address lookup for LRPRDAPP01 = 10.81.56.10
+[Network Analyzer (1430: 198)] Address lookup for LRPRDAPP01 = 10.81.56.10
+[Web Request      (1430:1724)] "HEAD /_assets/_.swf"   
+[Network Analyzer (1430:1724)]   (Sid:  2) Client -> Server @ : 401 bytes (Service=HTTP)
+[Network Analyzer (1430:1724)]   (Sid:  2) Server -> Client : 215 bytes  (Service=HTTP)
+[Web Request      (1430:1724)] "GET /_assets/_.swf"   
+[Network Analyzer (1430:1724)]   (Sid:  2) Client -> Server @ : 424 bytes (Service=HTTP)
+[Network Analyzer (1430:1724)]   (Sid:  2) Server -> Client : 1067 bytes  (Service=HTTP)
+[Web Request      (1430:1724)] "HEAD /_assets/_.swf"   
+[Network Analyzer (1430:1724)]   (Sid:  2) Client -> Server @ : 401 bytes (Service=HTTP)
+[Network Analyzer (1430:1724)]   (Sid:  2) Server -> Client : 215 bytes  (Service=HTTP)
+[Web Request      (1430:1724)] "GET /fonts/Ubuntu-R-webfont.eot?"   
+[Network Analyzer (1430:1724)]   (Sid:  2) Client -> Server @ : 480 bytes (Service=HTTP)
+[Network Analyzer (1430:1724)]   (Sid:  2) Server -> Client : 1380 bytes  (Service=HTTP)
+[Network Analyzer (1430:1724)]   (Sid:  2) Server -> Client : 16384 bytes  (Service=HTTP)
+[Network Analyzer (1430:1724)]   (Sid:  2) Server -> Client : 16384 bytes  (Service=HTTP)
+[Network Analyzer (1430:1724)]   (Sid:  2) Server -> Client : 16384 bytes  (Service=HTTP)
+[Network Analyzer (1430:1724)]   (Sid:  2) Server -> Client : 16384 bytes  (Service=HTTP)
+[Network Analyzer (1430:1724)]   (Sid:  2) Server -> Client : 16384 bytes  (Service=HTTP)
+[Network Analyzer (1430:1724)]   (Sid:  2) Server -> Client : 16384 bytes  (Service=HTTP)
+[Network Analyzer (1430:1724)]   (Sid:  2) Server -> Client : 16384 bytes  (Service=HTTP)
+[Network Analyzer (1430:1724)]   (Sid:  2) Server -> Client : 16384 bytes  (Service=HTTP)
+[Web Request      (1430:1724)] "GET /images/_topnavigation/new-topnavigation/new-navigation.png"   
+[Network Analyzer (1430:1724)]   (Sid:  3) Client -> Server @ : 516 bytes (Service=HTTP)
+[Web Request      (1430:1724)] "GET /images/_home-new/calcArrow.jpg"   
+[Network Analyzer (1430:1724)]   (Sid:  4) Client -> Server @ : 488 bytes (Service=HTTP)
+[Web Request      (1430:1724)] "GET /images/_home-new/intSubeBtnSet.jpg"   
+[Network Analyzer (1430:1724)]   (Sid:  1) Client -> Server @ : 492 bytes (Service=HTTP)
+[Network Analyzer (1430:1724)]   (Sid:  2) Server -> Client : 11643 bytes  (Service=HTTP)
+[Network Analyzer (1430:1724)]   (Sid:  3) Server -> Client : 7651 bytes  (Service=HTTP)
+[Network Analyzer (1430:1724)]   (Sid:  4) Server -> Client : 819 bytes  (Service=HTTP)
+[Web Request      (1430:1724)] "GET /images/_home-new/hemenBasvur.jpg"   
+[Network Analyzer (1430:1724)]   (Sid:  5) Client -> Server @ : 490 bytes (Service=HTTP)
+[Web Request      (1430:1724)] "GET /images/_home-new/duyuru-i.jpg"   
+[Network Analyzer (1430:1724)]   (Sid:  6) Client -> Server @ : 487 bytes (Service=HTTP)
+[Network Analyzer (1430:1724)]   (Sid:  1) Server -> Client : 16384 bytes  (Service=HTTP)
+[Network Analyzer (1430:1724)]   (Sid:  1) Server -> Client : 16384 bytes  (Service=HTTP)
+[Network Analyzer (1430:1724)]   (Sid:  5) Server -> Client : 9850 bytes  (Service=HTTP)
+[Network Analyzer (1430:1724)]   (Sid:  6) Server -> Client : 578 bytes  (Service=HTTP)
+[Network Analyzer (1430:1724)]   (Sid:  1) Server -> Client : 564 bytes  (Service=HTTP)
+[Net An. Warning  (1430: b64)] Request Connection: Remote Server @ 216.58.212.34:80 (Service=) Failed attempt #1. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Warning  (1430: 198)] Request Connection: Remote Server @ 216.58.212.40:80 (Service=) Failed attempt #1. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Warning  (1430:167c)] Request Connection: Remote Server @ 74.125.206.157:80 (Service=) Failed attempt #1. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Warning  (1430: b64)] Request Connection: Remote Server @ 216.58.212.34:80 (Service=) Failed attempt #2. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Warning  (1430:167c)] Request Connection: Remote Server @ 74.125.206.157:80 (Service=) Failed attempt #2. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Warning  (1430: 198)] Request Connection: Remote Server @ 216.58.212.40:80 (Service=) Failed attempt #2. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Warning  (1430: b64)] Request Connection: Remote Server @ 216.58.212.34:80 (Service=) Failed attempt #3. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Error    (1430: b64)] Request Connection: Remote Server @ 216.58.212.34:80   (Service=)  NOT PROXIED! (REASON: Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Warning  (1430: 198)] Request Connection: Remote Server @ 216.58.212.40:80 (Service=) Failed attempt #3. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Warning  (1430:167c)] Request Connection: Remote Server @ 74.125.206.157:80 (Service=) Failed attempt #3. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Error    (1430: 198)] Request Connection: Remote Server @ 216.58.212.40:80   (Service=)  NOT PROXIED! (REASON: Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Error    (1430:167c)] Request Connection: Remote Server @ 74.125.206.157:80   (Service=)  NOT PROXIED! (REASON: Unable to connect to remote server: rc = -1 , le = 10061)
+[Network Analyzer (1430: 154)] Address lookup for LRPRDAPP01 = 10.81.56.10
+[Network Analyzer (1430:167c)] Address lookup for LRPRDAPP01 = 10.81.56.10
+[Network Analyzer (1430: b64)] Address lookup for LRPRDAPP01 = 10.81.56.10
+[Net An. Warning  (1430: 154)] Request Connection: Remote Server @ 216.58.212.34:80 (Service=) Failed attempt #1. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Warning  (1430: b64)] Request Connection: Remote Server @ 216.58.212.40:80 (Service=) Failed attempt #1. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Warning  (1430:167c)] Request Connection: Remote Server @ 74.125.206.155:80 (Service=) Failed attempt #1. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Warning  (1430: 154)] Request Connection: Remote Server @ 216.58.212.34:80 (Service=) Failed attempt #2. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Warning  (1430:167c)] Request Connection: Remote Server @ 74.125.206.155:80 (Service=) Failed attempt #2. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Warning  (1430: b64)] Request Connection: Remote Server @ 216.58.212.40:80 (Service=) Failed attempt #2. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Warning  (1430: 154)] Request Connection: Remote Server @ 216.58.212.34:80 (Service=) Failed attempt #3. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Error    (1430: 154)] Request Connection: Remote Server @ 216.58.212.34:80   (Service=)  NOT PROXIED! (REASON: Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Warning  (1430:167c)] Request Connection: Remote Server @ 74.125.206.155:80 (Service=) Failed attempt #3. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Warning  (1430: b64)] Request Connection: Remote Server @ 216.58.212.40:80 (Service=) Failed attempt #3. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Error    (1430:167c)] Request Connection: Remote Server @ 74.125.206.155:80   (Service=)  NOT PROXIED! (REASON: Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Error    (1430: b64)] Request Connection: Remote Server @ 216.58.212.40:80   (Service=)  NOT PROXIED! (REASON: Unable to connect to remote server: rc = -1 , le = 10061)
+[Web Request      (1430:1724)] "GET /fonts/Ubuntu-B-webfont.eot?"   
+[Network Analyzer (1430:1724)]   (Sid:  1) Client -> Server @ : 480 bytes (Service=HTTP)
+[Network Analyzer (1430:1724)]   (Sid:  1) Server -> Client : 1380 bytes  (Service=HTTP)
+[Network Analyzer (1430:1724)]   (Sid:  1) Server -> Client : 16384 bytes  (Service=HTTP)
+[Network Analyzer (1430:1724)]   (Sid:  1) Server -> Client : 16384 bytes  (Service=HTTP)
+[Network Analyzer (1430:1724)]   (Sid:  1) Server -> Client : 16384 bytes  (Service=HTTP)
+[Network Analyzer (1430:1724)]   (Sid:  1) Server -> Client : 16384 bytes  (Service=HTTP)
+[Network Analyzer (1430:1724)]   (Sid:  1) Server -> Client : 16384 bytes  (Service=HTTP)
+[Network Analyzer (1430:1724)]   (Sid:  1) Server -> Client : 16384 bytes  (Service=HTTP)
+[Network Analyzer (1430:1724)]   (Sid:  1) Server -> Client : 16384 bytes  (Service=HTTP)
+[Network Analyzer (1430:1724)]   (Sid:  1) Server -> Client : 16384 bytes  (Service=HTTP)
+[Network Analyzer (1430:1724)]   (Sid:  1) Server -> Client : 16384 bytes  (Service=HTTP)
+[Network Analyzer (1430:1724)]   (Sid:  1) Server -> Client : 1086 bytes  (Service=HTTP)
+[Web Request      (1430:1724)] "GET /xml/ihtiyac-kredisi.xml?v1472103565433"   
+[Network Analyzer (1430:1724)]   (Sid:  1) Client -> Server @ : 518 bytes (Service=HTTP)
+[Network Analyzer (1430:1724)]   (Sid:  1) Server -> Client : 13166 bytes  (Service=HTTP)
+[Network Analyzer (1430:1724)]   (Sid:  1) Server -> Client : 60 bytes  (Service=HTTP)
+[Web Request      (1430:1724)] "GET /images/_home-new/hover.png"   
+[Network Analyzer (1430:1724)]   (Sid:  6) Client -> Server @ : 484 bytes (Service=HTTP)
+[Web Request      (1430:1724)] "GET /banner/media/691/ABAV2/gorsel.aspx"   
+[Network Analyzer (1430:1724)]   (Sid:  5) Client -> Server @ : 492 bytes (Service=HTTP)
+[Web Request      (1430:1724)] "GET /images/kredi-basvuru/select-arrow.jpg"   
+[Network Analyzer (1430:1724)]   (Sid:  2) Client -> Server @ : 495 bytes (Service=HTTP)
+[Web Request      (1430:1724)] "GET /images/_home-new/btnHoverBg.jpg"   
+[Network Analyzer (1430:1724)]   (Sid:  3) Client -> Server @ : 489 bytes (Service=HTTP)
+[Web Request      (1430:1724)] "GET /images/_home-new/btnHoverArrow.png"   
+[Network Analyzer (1430:1724)]   (Sid:  4) Client -> Server @ : 492 bytes (Service=HTTP)
+[Network Analyzer (1430:1724)]   (Sid:  2) Server -> Client : 1623 bytes  (Service=HTTP)
+[Network Analyzer (1430:1724)]   (Sid:  6) Server -> Client : 263 bytes  (Service=HTTP)
+[Web Request      (1430:1724)] "GET /images/kredi-basvuru/ico-ui.png"   
+[Network Analyzer (1430:1724)]   (Sid:  2) Client -> Server @ : 489 bytes (Service=HTTP)
+[Network Analyzer (1430:1724)]   (Sid:  3) Server -> Client : 511 bytes  (Service=HTTP)
+[Network Analyzer (1430:1724)]   (Sid:  4) Server -> Client : 560 bytes  (Service=HTTP)
+[Web Request      (1430:1724)] "GET /css/select2/select2.png"   
+[Network Analyzer (1430:1724)]   (Sid:  6) Client -> Server @ : 481 bytes (Service=HTTP)
+[Network Analyzer (1430:1724)]   (Sid:  2) Server -> Client : 3364 bytes  (Service=HTTP)
+[Network Analyzer (1430:1724)]   (Sid:  5) Server -> Client : 16384 bytes  (Service=HTTP)
+[Network Analyzer (1430:1724)]   (Sid:  5) Server -> Client : 16384 bytes  (Service=HTTP)
+[Network Analyzer (1430:1724)]   (Sid:  6) Server -> Client : 3402 bytes  (Service=HTTP)
+[Network Analyzer (1430:1724)]   (Sid:  5) Server -> Client : 16384 bytes  (Service=HTTP)
+[Network Analyzer (1430:1724)]   (Sid:  5) Server -> Client : 16384 bytes  (Service=HTTP)
+[Network Analyzer (1430:1724)]   (Sid:  5) Server -> Client : 16384 bytes  (Service=HTTP)
+[Network Analyzer (1430:1724)]   (Sid:  5) Server -> Client : 16384 bytes  (Service=HTTP)
+[Network Analyzer (1430:1724)]   (Sid:  5) Server -> Client : 16384 bytes  (Service=HTTP)
+[Network Analyzer (1430:1724)]   (Sid:  5) Server -> Client : 16384 bytes  (Service=HTTP)
+[Network Analyzer (1430:1724)]   (Sid:  5) Server -> Client : 16384 bytes  (Service=HTTP)
+[Network Analyzer (1430:1724)]   (Sid:  5) Server -> Client : 12865 bytes  (Service=HTTP)
+[Network Analyzer (1430: 154)] Address lookup for LRPRDAPP01 = 10.81.56.10
+[Net An. Warning  (1430: 154)] Request Connection: Remote Server @ 74.125.206.156:80 (Service=) Failed attempt #1. Unable to connect to remote server: rc = -1 , le = 10061)
+[Net An. Warning  (1430: 154)] Request Connection: Remote Server @ 74.125.206.156:80 (Service=) Failed attempt #2. Unable to connect to remote server: rc = -1 , le = 10061)

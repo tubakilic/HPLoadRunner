@@ -1,0 +1,15 @@
+[t3]
+FileName1=t3.htm
+URL1=http://wwwtest.finansbank.com.tr/
+Total=3
+RequestHeaderFile=t3_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t3_ResponseHeader.txt
+ContentType=text/html
+SnapshotXmlFile=snapshot_3.xml
+FileName2=t3_bquery.js.load.htm
+URL2=http://wwwtest.finansbank.com.tr/BehaviorPad/assets/js/bquery.js.load.aspx
+FileName3=t3_behaviorpad.js.load.htm
+URL3=http://wwwtest.finansbank.com.tr/BehaviorPad/assets/js/behaviorpad.js.load.aspx
+[ProtocolInfo]
+ProtocolId=QTWeb
