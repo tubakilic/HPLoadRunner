@@ -34,7 +34,7 @@ Action()
 		"Url=/css/select2/select2.png", ENDITEM, 
 		LAST);
 
-	web_custom_request("_.swf", 
+	/*web_custom_request("_.swf", 
 		"URL=http://wwwtest.finansbank.com.tr/_assets/_.swf", 
 		"Method=HEAD", 
 		"Resource=0", 
@@ -42,8 +42,17 @@ Action()
 		"Referer=", 
 		"Snapshot=t8.inf", 
 		"Mode=HTML", 
-		LAST); 
+		LAST); */
 
+	web_custom_request("_.swf_2", 
+		"URL=http://wwwtest.finansbank.com.tr/_assets/_.swf", 
+		"Method=HEAD", 
+		"Resource=0", 
+		"RecContentType=application/x-shockwave-flash", 
+		"Referer=", 
+		"Snapshot=t9.inf", 
+		"Mode=HTML", 
+		LAST);
 
 	web_url("ihtiyac-kredisi.xml", 
 		"URL=http://wwwtest.finansbank.com.tr/xml/ihtiyac-kredisi.xml?v1472109870823", 
